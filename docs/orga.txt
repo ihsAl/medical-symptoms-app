@@ -6,3 +6,4 @@ Bashar: Interface
 29 Juli
 - Call um 16 Uhr
 - Festsetzung der Deadlines und Unteraufgaben
+- Frontend Vorstellung
