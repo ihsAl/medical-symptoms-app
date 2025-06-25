@@ -1,5 +1,6 @@
 Orga und Deadlines
 Ihssan: LLM und Back-End Schnittpunkt
+- Evaluation von LLM Ergebnis
 Tanja: Neo4J
 Bashar: Interface
 
