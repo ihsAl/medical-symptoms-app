@@ -1,0 +1,13 @@
+Ziele
+- Text in Graph-Form überführen
+	- idealerweise sofort LLM-Text in Graph
+
+Graph DB Plan
+
+
+Ideen
+- neo4j graph builder ziehen und nutzen
+https://github.com/neo4j-labs/llm-graph-builder
+
+Fragen
+- 
