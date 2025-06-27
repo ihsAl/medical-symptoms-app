@@ -11,3 +11,9 @@ https://github.com/neo4j-labs/llm-graph-builder
 
 Fragen
 - 
+
+
+Neo4j Setup
+
+- Run as service
+https://stackoverflow.com/questions/49822519/neo4j-service-vs-console
