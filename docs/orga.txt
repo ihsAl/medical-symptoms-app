@@ -5,6 +5,6 @@ Tanja: Neo4J
 Bashar: Interface
 
 29 Juli
-- Call um 16 Uhr
+- Call um 20 Uhr
 - Festsetzung der Deadlines und Unteraufgaben
 - rausfinden mit welchen Sprachen wir arbeiten (koennen)
