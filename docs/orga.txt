@@ -8,3 +8,16 @@ Bashar: Interface
 - Call um 20 Uhr
 - Festsetzung der Deadlines und Unteraufgaben
 - rausfinden mit welchen Sprachen wir arbeiten (koennen)
+
+2 Juli 13 Uhr per Discord
+Tanja
+- einbinden von Github LLM to Knowledge Graph
+Bashar
+- Konzept erarbeiten
+Ihsan
+- Prompts ausarbeiten
+- Evaluation von LLM Ergebnis
+
+6 Juli
+Bashar
+- Chat Interface
