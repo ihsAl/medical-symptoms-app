@@ -9,6 +9,12 @@ Fragen
 Setup for LLM to Knowledge Graph
 https://neo4j.com/docs/operations-manual/current/installation/windows/
 
+Java Version: 21
+- pick JDK 21
+https://www.oracle.com/java/technologies/downloads/?er=221886#jdk21-windows
+- just run it 
+- deinstall other Java versions if you have any
+
 Neo4j Database (Not Neo4j Desktop):
 Version 5.26.0 (Windows)
 https://neo4j.com/download-thanks/?edition=community&release=5.26.0&flavour=winzip
@@ -18,25 +24,26 @@ Change inside the download URL to correct version
 Macbook version:
 https://go.neo4j.com/download-thanks.html?edition=community&release=5.26.0&flavour=unix
 - install under C:
+- follow the README instructions in neo4j folder
+- better rename the folder itself to "neo4j"
+
+login: neo4j
+default password: neo4j
+suggesting to change the password to: 12345678
 
 APOC Version:
-https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/5.26.0
+https://github.com/neo4j-contrib/neo4j-apoc-procedures/archive/refs/tags/5.26.0.zip
 Download, put into the "plugins" folder in neo4j
 
-Java Version: 21
-
-WSL2
+WSL2 (for Windows)
 - download
+- run in comand center (after you entered the llm-graph-builder folder): 
+wsl.exe -d Ubuntu
+
+Finally, run:
+dock-compose up
+
+Distribution successfully installed. It can be launched via 'wsl.exe -d Ubuntu'
 
 Docker Desktop
 - Just download the Desktop version
-
-
-
-login: neo4j
-password: 12345678
-(after it was changed)
-default password: neo4j
-
-- Run as service
-https://stackoverflow.com/questions/49822519/neo4j-service-vs-console
