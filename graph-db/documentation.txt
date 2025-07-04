@@ -41,7 +41,7 @@ WSL2 (for Windows)
 wsl.exe -d Ubuntu
 
 Finally, run:
-dock-compose up
+docker-compose up
 
 Distribution successfully installed. It can be launched via 'wsl.exe -d Ubuntu'
 
