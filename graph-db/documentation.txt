@@ -40,6 +40,11 @@ WSL2 (for Windows)
 - run in comand center (after you entered the llm-graph-builder folder): 
 wsl.exe -d Ubuntu
 
+Frontend updates:
+- pip install uvicorn
+- pip install gunicorn
+- pip install fast-api
+
 Finally, run:
 docker-compose up
 
