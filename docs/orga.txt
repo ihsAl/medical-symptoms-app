@@ -18,6 +18,16 @@ Ihsan
 - Prompts ausarbeiten
 - Evaluation von LLM Ergebnis
 
-6 Juli
+5 Juli 10 Uhr
 Bashar
 - Chat Interface
+Ihsan & Tanja
+- LLM to Knowledge Graph
+
+9 Juli (bis Montag sagt Bashar welche Uhrzeit)
+Bashar
+- Chat Interface
+Tanja & Ihsan
+- Testlauf wie Diagnose funktioniert
+- Anpassung mit gezogenen Daten (alte Diagnosen rausziehen)
+
