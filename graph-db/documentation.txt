@@ -40,6 +40,11 @@ WSL2 (for Windows) trying it next
 - run in comand center (after you entered the llm-graph-builder folder): 
 wsl.exe -d Ubuntu
 
+Backend updates:
+1. go to backend folder of llm-graph-main-builder in the comand terminal
+2. run:
+pip install -t requirements.txt
+
 Frontend updates:
 - pip install uvicorn
 - pip install gunicorn
