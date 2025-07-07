@@ -45,6 +45,8 @@ Frontend updates:
 - pip install gunicorn
 - pip install fast-api
 
+In the frontend and backend folders each, copy example.env and rename it to ".env"
+
 Docker Desktop
 - Just download the Desktop version
 
