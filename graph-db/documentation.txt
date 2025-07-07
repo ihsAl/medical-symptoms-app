@@ -45,7 +45,7 @@ Frontend updates:
 - pip install gunicorn
 - pip install fast-api
 
-Finally, run:
+Finally, run after launching Docker Desktop:
 docker-compose up
 
 Distribution successfully installed. It can be launched via 'wsl.exe -d Ubuntu'
