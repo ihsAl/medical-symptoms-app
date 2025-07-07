@@ -45,10 +45,11 @@ Frontend updates:
 - pip install gunicorn
 - pip install fast-api
 
+Docker Desktop
+- Just download the Desktop version
+
 Finally, run after launching Docker Desktop:
 docker-compose up
 
-Distribution successfully installed. It can be launched via 'wsl.exe -d Ubuntu'
-
-Docker Desktop
-- Just download the Desktop version
+default way to access it (may be different, however, for different platforms)
+http://localhost:8080/
