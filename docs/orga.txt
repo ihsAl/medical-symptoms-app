@@ -32,11 +32,10 @@ Ihsan
 Tanja
 - Tests auf dem PC mit LLM to Knowledge Graph
 
-9 Juli (bis Montag sagt Bashar welche Uhrzeit)
+9 Juli 17:30 Uhr
 Bashar
-- Chat Interface
+- Interface
 Tanja & Ihsan
-- Testlauf wie Diagnose funktioniert
-- Anpassung mit gezogenen Daten (alte Diagnosen rausziehen)
+- neo4j
 
 
