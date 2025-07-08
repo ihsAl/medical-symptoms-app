@@ -35,11 +35,6 @@ APOC Version: didn't work
 https://github.com/neo4j-contrib/neo4j-apoc-procedures/archive/refs/tags/5.26.0.zip
 Download, put into the "plugins" folder in neo4j
 
-WSL2 (for Windows) trying it next
-- download
-- run in comand center (after you entered the llm-graph-builder folder): 
-wsl.exe -d Ubuntu
-
 Backend updates:
 1. go to backend folder of llm-graph-main-builder in the comand terminal
 2. run:
@@ -52,6 +47,11 @@ Frontend updates:
 
 In the frontend and backend folders each, copy example.env and rename it to ".env"
 
+WSL2 (for Windows) trying it next
+- download
+- run in comand center (after you entered the llm-graph-builder folder): 
+wsl.exe -d Ubuntu
+
 Docker Desktop
 - Just download the Desktop version
 
@@ -60,3 +60,5 @@ docker-compose up
 
 default way to access it (may be different, however, for different platforms)
 http://localhost:8080/
+
+feel free to use the neo4j credentials file that is in graph-db folder
