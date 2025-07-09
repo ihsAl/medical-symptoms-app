@@ -24,10 +24,18 @@ Bashar
 Ihsan & Tanja
 - LLM to Knowledge Graph
 
-9 Juli (bis Montag sagt Bashar welche Uhrzeit)
+8 Juli 10 Uhr
 Bashar
-- Chat Interface
+- LLM to knowledge graph im server
+Ihsan
+- LLM to knowledge graph auf ihrem laptop
+Tanja
+- Tests auf dem PC mit LLM to Knowledge Graph
+
+9 Juli 17:30 Uhr
+Bashar
+- Interface
 Tanja & Ihsan
-- Testlauf wie Diagnose funktioniert
-- Anpassung mit gezogenen Daten (alte Diagnosen rausziehen)
+- neo4j
+
 

@@ -10,12 +10,12 @@ Setup for LLM to Knowledge Graph
 https://neo4j.com/docs/operations-manual/current/installation/windows/
 
 Java Version: 21
-- pick JDK 21
+- pick JDK 21 - is done
 https://www.oracle.com/java/technologies/downloads/?er=221886#jdk21-windows
 - just run it 
 - deinstall other Java versions if you have any
 
-Neo4j Database (Not Neo4j Desktop):
+Neo4j Database (Not Neo4j Desktop): is done
 Version 5.26.0 (Windows)
 https://neo4j.com/download-thanks/?edition=community&release=5.26.0&flavour=winzip
 For non-Windows use this site:
@@ -29,21 +29,36 @@ https://go.neo4j.com/download-thanks.html?edition=community&release=5.26.0&flavo
 
 login: neo4j
 default password: neo4j
-suggesting to change the password to: 12345678
+suggesting to change the password to: 12345678 is done
 
-APOC Version:
+APOC Version: didn't work
 https://github.com/neo4j-contrib/neo4j-apoc-procedures/archive/refs/tags/5.26.0.zip
 Download, put into the "plugins" folder in neo4j
 
-WSL2 (for Windows)
+Backend updates:
+1. go to backend folder of llm-graph-main-builder in the comand terminal
+2. run:
+pip install -t requirements.txt
+
+Frontend updates:
+- pip install uvicorn
+- pip install gunicorn
+- pip install fast-api
+
+In the frontend and backend folders each, copy example.env and rename it to ".env"
+
+WSL2 (for Windows) trying it next
 - download
 - run in comand center (after you entered the llm-graph-builder folder): 
 wsl.exe -d Ubuntu
 
-Finally, run:
-dock-compose up
-
-Distribution successfully installed. It can be launched via 'wsl.exe -d Ubuntu'
-
 Docker Desktop
 - Just download the Desktop version
+
+Finally, run after launching Docker Desktop:
+docker-compose up
+
+default way to access it (may be different, however, for different platforms)
+http://localhost:8080/
+
+feel free to use the neo4j credentials file that is in graph-db folder
