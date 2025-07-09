@@ -1,0 +1,21 @@
+Fragen & Aufteilung
+
+1. Strukturierte Einspeicherung der Daten (fast manuell) oder AI generierter Datenbankgraph?
+1.1. Strukturierte Speicherung möglich für erste Anfragen, aber wohl nicht für von AI generierte Fragen?
+2. Welches Schema nutzen wir? (relevant für beide Fälle)
+3. Daraus folgend: welche Fragen stellen wir?
+3.2 Wollen wir cheaten? Z.b. nach Symptomen immer fragen "Seit wann bist du krank?" und andere
+typisch relevante Fragen stellen, statt alles dem AI zu überlassen?
+- Tanja
+
+1. Wie zieht man eine passende Diagnose aus dem Neo4j Graph?
+- Ihsan
+
+1. Daten aus dem Interface (Age, Gender, User ID) in neo4j Datenbank einspeichern
+2. Change User
+- Bashar
+
+Präsentation
+1. Wie viele Slides?
+2. Einfach Code reinkopieren teilweise?
+3. Wie viel Zeit um Code laufen zu lassen (wir müssen es ja auch zeigen, dass es geht? oder nicht? reicht Beispiel auf Slides?)
