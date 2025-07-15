@@ -40,3 +40,11 @@ Tanja & Ihsan
 
 14 Juli 20 Uhr
 mehr Details in planning
+
+17 Juli 11 Uhr Lernzentrum
+Tanja
+- Test Dataset
+Bashar
+- Interface + Backend Verbindung
+Ihsan
+- Cache Abruf
