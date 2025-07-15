@@ -1,6 +1,6 @@
 // backend/server.js
 const WebSocket = require('ws');
-const { getFollowUpQuestions, getDiagnosis } = require('./llm/llmQuestionsDiagnosis.js');
+const { getFollowUpQuestions, getDiagnosis } = require('../llm/llmQuestionsDiagnosis.js');
 const { v4: uuidv4 } = require('uuid');
 
 // WebSocket-Server auf Port 8090
