@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "classix": "^2.2.2",
+    "react": "^19.1.0",
     "tailwindcss": "^4.1.11"
   }
 }
