@@ -1,0 +1,50 @@
+Frontend Documentation:
+bascially Everything to build chat.tsx and home.tsx
+For a quick install without any further details, just do the following:
+cd frontend in the terminal (to Navigate to the frontend)
+npm install (to install everything from the package.json)
+
+How to start the application:
+be sure that the backend server is already running (looking into documentation of backend for that)
+cd frontend
+npm run dev
+
+components/custom/chatinput.tsx:
+- This component is used to create a submit field where the user can enter his symptomps and bascially
+  has his dialogue with the LLM
+- Needed installations: npm install lucide-react, npm install classix, npm install sonner
+
+components/custom/header.tsx:
+- This component creates the header with a welcome message and a logout button
+- Needed installations: npm install react-router-dom
+
+components/custom/markdown.tsx:
+- Styling aspects for the message
+- Needed installations: npm install react-markdown remark-gfm
+
+components/custom/message.tsx:
+- Creates the user message and the LLM reply (styles them)
+- Needed installation: npm install framer-motion
+
+components/custom/overview.tsx:
+- Gives brief introduction with a welcome both used in chat and at home page
+- Needed installation: npm install framer-motion
+
+
+components/custom/use-scroll-to-bottom.ts:
+- enables automatic scrolling to the bottom 
+- No Needed installation
+
+components/ui/button.tsx:
+- Defines button and its characteristics for later usage
+- Needed installation: npm install @radix-ui/react-slot class-variance-authority
+
+components/ui/textarea.tsx:
+- Defines input area which for example will later be used for input field
+- No Needed installation 
+
+lib/utils.ts: 
+- Function to prevent conflict of tailwind classes
+
+pages\chat/chat.tsx:
+- Everything gets put together and importing to create the chatbot

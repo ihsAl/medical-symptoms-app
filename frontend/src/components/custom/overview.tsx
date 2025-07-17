@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import {MedicIcon} from '@/components/custom/icons';
 
+// This component displays an overview of the application with a welcome message and an icon.
+// It is used to introduce the app to users and provide a brief description.
 export const Overview = () => {
   return (
     <>

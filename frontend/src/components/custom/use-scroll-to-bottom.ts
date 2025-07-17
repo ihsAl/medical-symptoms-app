@@ -1,5 +1,7 @@
 import { useEffect, useRef, RefObject } from "react";
 
+
+// Allow the chat interface to automatically scroll to the bottom when new messages are added.
 export function useScrollToBottom<T extends HTMLElement>(): [
   RefObject<T>,
   RefObject<T>,

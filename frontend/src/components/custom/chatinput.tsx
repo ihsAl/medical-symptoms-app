@@ -11,7 +11,9 @@ interface ChatInputProps {
     isLoading: boolean;
 }
 
-
+//With this function we can enter a question in the chat. It has several features:
+//- It allows the user to enter a question and submit it by pressing the Enter key.
+//- Furthermore it has a loading state that prevents the user from submitting multiple questions at once.
 export const ChatInput = ({ question, setQuestion, onSubmit, isLoading }: ChatInputProps) => {
     return (
         <div className="relative w-full flex flex-col gap-4">

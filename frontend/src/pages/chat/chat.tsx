@@ -8,8 +8,11 @@ import { Overview } from "@/components/custom/overview";
 import { useLocation } from "react-router-dom";
 import {v4 as uuidv4} from 'uuid';
 
+// WebSocket connection to the backend server
 const socket = new WebSocket("ws://localhost:8090"); 
 
+// Basically everything in this file is related to the chat functionality
+// The Chat component handles the chat interface, message sending, and receiving responses from the server
 export function Chat() {
   const location = useLocation();
   const userName = location.state?.userName || "Guest";
