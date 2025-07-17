@@ -4,6 +4,11 @@ For a quick install without any further details, just do the following:
 cd frontend in the terminal (to Navigate to the frontend)
 npm install (to install everything from the package.json)
 
+How to start the application:
+be sure that the backend server is already running (looking into documentation of backend for that)
+cd frontend
+npm run dev
+
 components/custom/chatinput.tsx:
 - This component is used to create a submit field where the user can enter his symptomps and bascially
   has his dialogue with the LLM
