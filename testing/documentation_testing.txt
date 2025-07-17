@@ -1,0 +1,19 @@
+1. giving answers from csv
+
+Randomized answers.
+
+2. Diagnosistestdaten:
+username: test_0, test_1
+diagnosis: ziehen aus csv und als graph speichern
+symptom: ziehen aus csv, durch llm  und als graph speichern
+
+nur vergleichen mit echten Usern, welche nicht test haben in der ID
+
+Unsere LLM-Daten:
+10 test-Fälle durchlaufen lassen, als graph speichern
+
+
+// INSTALLATION STEPS
+1. Run the following command to install papaparse for reading the test csv data file.
+npm install papaparse
+2. 
