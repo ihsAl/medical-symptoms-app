@@ -49,16 +49,15 @@ Bashar
 Ihsan
 - Cache Abruf
 
+21 Juli 20 Uhr
 
 LLM (Ihsan)
-- Synonyme separat gespeichert
-- *Cache Implementierung*
-- () entfernen
-- Dokumentation
+2 Synonyme separat gespeichert
+3. () entfernen
+1. *Dokumentation*
 
 Test
 - Tanja
 
 Interface
 - Bashar
-- Dokumentation
