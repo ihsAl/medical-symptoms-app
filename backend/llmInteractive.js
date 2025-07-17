@@ -113,12 +113,30 @@ async function askQuestion(prompt) {
 //    diagnosisFull = await getDiagnosis(symptoms, answers);
 //}
 
+// Versuche Cache-Diagnose zu finden
+console.log("\nPrüfe, ob Diagnose bereits im Cache vorhanden ist...\n");
+const cached = await cacheDiagnosis(symptoms);
+
+let diagnosisFull;
+
+if (cached && cached.cached === true && cached.diagnosis && cached.diagnosis.trim() !== "") {
+    console.log(`Gefundene Diagnose im Cache (PatientID: ${cached.patientId}): ${cached.diagnosis}`);
+    diagnosisFull = `Diagnosis: ${cached.diagnosis}\nRecommendation: (aus Cache – keine Empfehlung gespeichert)`;
+} else {
+    console.log("Keine passende Diagnose im Cache gefunden. Hole Diagnose vom LLM...\n");
+    diagnosisFull = await getDiagnosis(symptoms, answers);
+    console.log(diagnosisFull);
+}
 
 
-        console.log("\nHole Diagnose vom LLM...\n");
-        const diagnosisFull = await getDiagnosis(symptoms, answers);
-        console.log("Mögliche Diagnose / Empfehlung:\n");
-        console.log(diagnosisFull);
+
+
+
+
+      //  console.log("\nHole Diagnose vom LLM...\n");
+       // const diagnosisFull = await getDiagnosis(symptoms, answers);
+       // console.log("Mögliche Diagnose / Empfehlung:\n");
+       // console.log(diagnosisFull);
 
 
         // extract diagnosis and recommendation
