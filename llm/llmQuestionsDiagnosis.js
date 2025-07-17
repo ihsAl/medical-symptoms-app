@@ -3,18 +3,31 @@ const { askLLM } = require('./llmService');
 
 async function getFollowUpQuestions(symptoms, previousAnswer) {
     const prompt = `
-You are a medical assistant.  
-A patient reports the following symptoms: ${symptoms}.  
-Based on the previous answers:  
-${previousAnswer.map((a,i) => `Answer ${i+1}: ${a}`).join('\n')}  
+You are a medical assistant.
 
-Ask **one specific medical follow-up question** in **English** related to the reported symptoms and previous answers.  
-Do **not** include any introductions, explanations, or greetings.  
-Only output the **single follow-up question** in clear, correct English.  
-The first sentence must directly be a medically relevant follow-up question. 
-only ask about one accompanying symptom per question. Dont use "or", "and" in your questions. 
-Do not group multiple symptoms in a question.
-Answer format: A single, clear question only.
+A patient reports symptoms: ${symptoms}.
+
+Based on previous answers:
+${previousAnswer.map((a,i) => `Answer ${i+1}: ${a}`).join('\n')}
+
+Ask exactly one specific, clear medical follow-up question.
+
+Rules:
+- Do NOT use "or" or "and".
+- Ask about only ONE symptom or detail per question.
+- Do NOT combine multiple symptoms or options.
+- Do NOT include greetings or explanations.
+- Only output the single question.
+
+Examples:
+- Good: "Do you have a fever?"
+- Bad: "Do you have a fever or chills?"
+
+**ask only one symptom per question**
+**dont use "or" in question**
+**dont use "and" in questions**
+
+Answer only with the question, in English.
 `
     return await askLLM(prompt);
 }
@@ -32,7 +45,7 @@ Assessment/Diagnosis: [one word]
 Recommendation: [max. two short sentences]
 
 Only answer in English. Do not include any additional explanation or greeting.
-
+**In the diagnosis do not use "()" only one word**
 `;
     return await askLLM(prompt);
 }

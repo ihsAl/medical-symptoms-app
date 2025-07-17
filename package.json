@@ -2,10 +2,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.10.0",
-    "classix": "^2.2.2",
-    "react": "^19.1.0",
-    "tailwindcss": "^4.1.11",
-    "uuid": "^11.1.0",
-    "ws": "^8.18.3"
+    "neo4j-driver": "^5.28.1",
+    "tailwindcss": "^4.1.11"
   }
 }
