@@ -95,7 +95,7 @@ async function askQuestion(prompt) {
                 
 
                 // output symptoms to test extractSymptoms-Function
-                console.log("\nAktuelle gesammelte Symptome:", symptoms.map(s => s.trim()).join(', '));
+                console.log("\nAktuelle gesammelte Symptome:", symptoms.map(s => s.toLowerCase().trim()).join(', '));
             }
         }
 

@@ -38,7 +38,7 @@ Symptoms: ${symptoms}
 Answers:  
 ${answers.join('\n')}
 
-Provide a possible **medical assessment** (not a final diagnosis)  
+Provide a possible **medical diagnosis** 
 and a recommendation for what the patient should do, using the following format:
 
 Assessment/Diagnosis: [one word]  
