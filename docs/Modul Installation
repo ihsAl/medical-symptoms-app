@@ -1,0 +1,27 @@
+Frontend: 
+npm install ws --> Websocket für Frontend 
+
+
+LLM / graph - db 
+
+npm install axios 
+npm install neo4j-driver
+
+Docker - Neo4j Install 
+
+linux: 
+docker run \
+  -d \
+  --name neo4j \
+  -p 7474:7474 \
+  -p 7687:7687 \
+  -e NEO4J_AUTH=neo4j/llmproject2025 \
+  neo4j
+
+  windows
+  docker run ^
+  --name neo4j-local ^
+  -p7474:7474 -p7687:7687 ^
+  -e NEO4J_AUTH=neo4j/llmproject2025 ^
+  neo4j:latest
+

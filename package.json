@@ -3,6 +3,8 @@
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.10.0",
     "neo4j-driver": "^5.28.1",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.3"
   }
 }
