@@ -3,12 +3,17 @@ import { PreviewMessage, ThinkingMessage } from "../../components/custom/message
 import { useScrollToBottom } from '@/components/custom/use-scroll-to-bottom';
 import { useState, useRef } from "react";
 import { message } from "../../interfaces/interfaces"
+import { Header } from "@/components/custom/header";
 import { Overview } from "@/components/custom/overview";
+import { useLocation } from "react-router-dom";
 import {v4 as uuidv4} from 'uuid';
 
 const socket = new WebSocket("ws://localhost:8090"); 
 
 export function Chat() {
+  const location = useLocation();
+  const userName = location.state?.userName || "Guest";
+
   const [messagesContainerRef, messagesEndRef] = useScrollToBottom<HTMLDivElement>();
   const [messages, setMessages] = useState<message[]>([]);
   const [question, setQuestion] = useState<string>("");
@@ -68,6 +73,9 @@ async function handleSubmit(text?: string) {
 }
 
   return (
+    <div className="flex flex-col min-w-0 h-dvh bg-gray-50">
+      <Header userName={userName} />
+
     <div className="flex flex-col min-w-0 h-dvh bg-background">
       <div className="flex flex-col min-w-0 gap-6 flex-1 overflow-y-scroll pt-4" ref={messagesContainerRef}>
         {messages.length == 0 && <Overview />}
@@ -85,6 +93,7 @@ async function handleSubmit(text?: string) {
           isLoading={isLoading}
         />
       </div>
+    </div>
     </div>
   );
 };
