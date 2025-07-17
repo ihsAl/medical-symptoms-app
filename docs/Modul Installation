@@ -9,6 +9,7 @@ npm install neo4j-driver
 
 Docker - Neo4j Install 
 
+linux: 
 docker run \
   -d \
   --name neo4j \
@@ -16,3 +17,11 @@ docker run \
   -p 7687:7687 \
   -e NEO4J_AUTH=neo4j/llmproject2025 \
   neo4j
+
+  windows
+  docker run ^
+  --name neo4j-local ^
+  -p7474:7474 -p7687:7687 ^
+  -e NEO4J_AUTH=neo4j/test123 ^
+  neo4j:latest
+
