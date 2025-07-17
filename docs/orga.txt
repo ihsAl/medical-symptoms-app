@@ -48,3 +48,17 @@ Bashar
 - Interface + Backend Verbindung
 Ihsan
 - Cache Abruf
+
+
+LLM (Ihsan)
+- Synonyme separat gespeichert
+- *Cache Implementierung*
+- () entfernen
+- Dokumentation
+
+Test
+- Tanja
+
+Interface
+- Bashar
+- Dokumentation
