@@ -25,3 +25,10 @@ docker run \
   -e NEO4J_AUTH=neo4j/llmproject2025 ^
   neo4j:latest
 
+  Server starten und frontend im browser anzeigen:
+  
+  cd backend 
+  node Server
+  cd frontend
+  npm run dev
+

@@ -18,10 +18,14 @@ async function cacheDiagnosis(symptomList) {
 
         console.log("Cache Query Result:", result.records);
 
-        if (result.records) {
+        if (result.records.length > 0) {
             const record = result.records[0];
             const diagnosis = record.get('diagnosis');
             const patientId = record.get('patientId');
+
+             if (!diagnosis || diagnosis.trim() === "") {
+                return { cached: false };
+            }
 
             if (diagnosis && patientId) {
                 return {
