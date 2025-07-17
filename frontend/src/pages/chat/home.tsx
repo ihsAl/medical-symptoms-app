@@ -2,6 +2,9 @@ import { Overview } from "@/components/custom/overview";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
+// The Home component serves as the entry point for the chat application
+// It allows users to enter their name and navigate to the chat interface
 export const Home = () => {
   const [name, setName] = useState("");
   const navigate = useNavigate();

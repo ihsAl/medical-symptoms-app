@@ -4,6 +4,9 @@ import { BotIcon } from './icons';
 import { Markdown } from './markdown';
 import { message } from "../../interfaces/interfaces"
 
+
+// This component makes the user message previewable in the chat interface.
+// It displays the message content with custom styles and animations.
 export const PreviewMessage = ({ message }: { message: message; }) => {
 
   return (
