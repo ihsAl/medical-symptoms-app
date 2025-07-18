@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const OLLAMA_API = 'http://localhost:11434/api/generate';
+const OLLAMA_API = 'http://127.0.0.1:11434/api/generate';
 
 
 // use model mistral-instruct instead of mistral because it perfoms better in dialog
