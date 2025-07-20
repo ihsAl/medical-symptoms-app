@@ -1,19 +1,62 @@
-1. giving answers from csv
+Diagnosistestdaten-Idee:
+1. Symptome aus Phrasen generieren.
+2. Symptome speichern in den Graph.
+2. LLM-Diagnose ziehen und vergleichen mit richtiger Diagnose aus der Datei.
+3. Ergebnis speichern in ein Array (true/false)
 
-Randomized answers.
-
-2. Diagnosistestdaten:
-username: test_0, test_1
-diagnosis: ziehen aus csv und als graph speichern
-symptom: ziehen aus csv, durch llm  und als graph speichern
-
-nur vergleichen mit echten Usern, welche nicht test haben in der ID
-
-Unsere LLM-Daten:
-10 test-Fälle durchlaufen lassen, als graph speichern
+If All Fails:
+1. Run manually.
 
 
 // INSTALLATION STEPS
-1. Run the following command to install papaparse for reading the test csv data file.
-npm install papaparse
-2. 
+1. Install SQLite
+https://www.sqlite.org/download.html
+download last zip with .exe files inside
+https://dev.to/dendihandian/installing-sqlite3-in-windows-44eb
+follow the steps
+1. Run the following command to install csv for reading the test csv data file.
+npm install csv
+
+
+
+
+// this reads data from csv file
+// all functions need to run inside the stream
+const readCSVData = async () => new Promise((resolve, reject) => {
+let dataset = []
+fs.createReadStream("./Symptom2Disease_first50.csv")
+  .pipe(
+    parse({
+      delimiter: ";",
+      from_line: 2
+    })
+  )
+  .on("data", function (row) {
+    resolve(dataset)
+    // 👇 push the object row into the array
+    dataset.push(row);
+  })
+  .on("error", function (error) {
+    console.log(error.message);
+  })
+  .on("end", function () {
+    // 👇 log the result array
+    return
+  })
+});
+
+readCSVData().then(dataset => console.log(dataset));
+
+console.log(dataset)
+
+// let symptoms = extractSymptoms(dataset[0][2]);
+// console.log(symptoms)
+// if (!Array.isArray(symptoms)){
+//     symptoms = symptoms ? [symptoms] : [];
+//     console.log(symptoms);
+// }
+// else {
+//     //  save 0 to array
+//     // run function again
+//     return
+// };

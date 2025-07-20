@@ -3,6 +3,8 @@ npm install ws --> Websocket für Frontend
 
 
 LLM / graph - db 
+Installiere die allerletzte Node.js Version (Version 19 mindestens ist notwendig)
+https://nodejs.org/en/download
 
 npm install axios 
 npm install neo4j-driver

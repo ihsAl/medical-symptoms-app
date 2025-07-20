@@ -2,7 +2,9 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.10.0",
+    "csv": "^6.4.1",
     "neo4j-driver": "^5.28.1",
+    "sqlite3": "^5.1.7",
     "tailwindcss": "^4.1.11",
     "uuid": "^11.1.0",
     "ws": "^8.18.3"
