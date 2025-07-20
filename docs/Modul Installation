@@ -18,7 +18,7 @@ docker run \
   -e NEO4J_AUTH=neo4j/llmproject2025 \
   neo4j
 
-  windows
+windows:
   docker run ^
   --name neo4j-local ^
   -p7474:7474 -p7687:7687 ^
@@ -26,3 +26,10 @@ docker run \
   -e NEO4J_AUTH=neo4j/llmproject2025 ^
   neo4j:latest
 
+password: llmproject2025
+
+site to open neo4j:
+http://localhost:7474/browser/preview/
+
+to run ollama open terminal:
+ollama run  mistral:instruct
