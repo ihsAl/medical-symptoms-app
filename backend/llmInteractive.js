@@ -28,7 +28,6 @@ function splitDiagnosisRecommendation(diagnosisText) {
     return { diagnosis, recommendation };
 }
 
-
 console.log('start llm medical symptoms app');
 
 // readline-interface to enable interaction with the terminal
