@@ -1,4 +1,4 @@
-// 
+// storeData.js
 const { driver } = require('./neo4jService');
 
 async function savePatientCase({patientId, age, gender, allSymptoms, followUpQA, diagnosis, recommendation}) {
