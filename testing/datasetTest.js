@@ -1,16 +1,14 @@
-import Papa from 'papaparse';
+const { extractSymptoms } = require('../llm/extractSymptoms');
+// const { dataset } = require('./dataset.js')
 
-Papa.parse(file, config);
-    
-const csv = Papa.unparse(data[, config]);
+let dataset = [[
+    'test_Psoriasis_0',
+    'Psoriasis',
+    'I have been experiencing a skin rash on my arms, legs, and torso for the past few weeks. It is red, itchy, and covered in dry, scaly patches.'
+  ]];
 
-
-
-var csv = require('./Symptom2Disease_first50'); // test csv file
-
-
-var options={'separator' : ';'}; // change standard separator in csv to ;
-var testDataArrays = $.csv.toArrays(csv, options);
-
-
-(console.log(testDataArrays);
+let symptoms = extractSymptoms(dataset[0][2]);
+    // if (!Array.isArray(symptoms)){
+    //     symptoms = symptoms ? [symptoms] : [];
+    // };
+console.log(dataset)
