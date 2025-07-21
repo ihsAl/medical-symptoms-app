@@ -1,12 +1,12 @@
 // backend/server.js
-const WebSocket = require('ws');
+//const WebSocket = require('ws');
 const { getFollowUpQuestions, getDiagnosis } = require('../llm/llmQuestionsDiagnosis.js');
 const { v4: uuidv4 } = require('uuid');
 
 // WebSocket-Server auf Port 8090
-const wss = new WebSocket.Server({ port: 8090 });
+//const wss = new WebSocket.Server({ port: 8090 });
 
-wss.on('connection', (ws) => {
+/*wss.on('connection', (ws) => {
   console.log('Client connected');
 
   // Track session data
