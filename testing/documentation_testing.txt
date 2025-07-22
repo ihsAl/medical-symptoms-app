@@ -17,5 +17,12 @@ npm install csv
 node datasetTest
 
 // KNOWN BUGS
-1. When running the program on a large file several erorr messages appear
-in terminal. They do not conflict with giving out correct output.
+1. When running the program on a large file, the system can't handle it,
+so I divided the dataset file into three files
+
+
+// LATEST RUN RESULTS: dataset (first dataset, two more remaining)
+Amount of correct answers
+75
+Amount of wrong answers
+258
