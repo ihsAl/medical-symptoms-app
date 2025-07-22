@@ -8,7 +8,6 @@ const { cacheDiagnosis } = require('../graph-db/diagnosisCache');
 const { splitDiagnosisRecommendation } = require('../llm/splitDiagnosisRecommendation');
 
 
-
 console.log('start llm medical symptoms app');
 
 // readline-interface to enable interaction with the terminal
@@ -38,9 +37,15 @@ async function askQuestion(prompt) {
 
         // extract symptoms from the user input and storage in array "symptoms"
         let symptoms = await extractSymptoms(userInput);
+
+        // debug
+        console.log("🧪 extractSymptoms(userInput):", symptoms);
+        
         if (!Array.isArray(symptoms)){
             symptoms = symptoms ? [symptoms] : [];
         }
+        //debug
+        console.log("\nAktuelle gesammelte Symptome:", symptoms.map(s => s.toLowerCase().trim()).join(', '));
 
         let answers = []; // stores question-answer-pairs
         let keepAsking = true;
@@ -72,28 +77,13 @@ async function askQuestion(prompt) {
 }
 
 
-                
 
                 // output symptoms to test extractSymptoms-Function
                 console.log("\nAktuelle gesammelte Symptome:", symptoms.map(s => s.toLowerCase().trim()).join(', '));
             }
         }
 
-        // get diagnosis from llm
-// Versuch Cache-Diagnose zu finden
-//console.log("\nPrüfe, ob Diagnose bereits im Cache vorhanden ist...\n");
-//const cached = await cacheDiagnosis(symptoms);
-
-//let diagnosisFull;
-//if (cached) {
-//    console.log(`Gefundene Diagnose im Cache (PatientID: ${cached.patientId}): ${cached.diagnosis}`);
-//    diagnosisFull = `Diagnosis: ${cached.diagnosis}\nRecommendation: (aus Cache – keine Empfehlung gespeichert)`;
-//} else {
-//    console.log("Keine passende Diagnose im Cache gefunden. Hole Diagnose vom LLM...\n");
-//    diagnosisFull = await getDiagnosis(symptoms, answers);
-//}
-
-// Versuche Cache-Diagnose zu finden
+        
 console.log("\nPrüfe, ob Diagnose bereits im Cache vorhanden ist...\n");
 const cached = await cacheDiagnosis(symptoms);
 
@@ -112,11 +102,6 @@ if (cached && cached.cached === true && cached.diagnosis && cached.diagnosis.tri
 
 
 
-
-      //  console.log("\nHole Diagnose vom LLM...\n");
-       // const diagnosisFull = await getDiagnosis(symptoms, answers);
-       // console.log("Mögliche Diagnose / Empfehlung:\n");
-       // console.log(diagnosisFull);
 
 
         // extract diagnosis and recommendation

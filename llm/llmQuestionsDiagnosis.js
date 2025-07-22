@@ -41,7 +41,7 @@ ${answers.join('\n')}
 Provide a possible **medical diagnosis** 
 and a recommendation for what the patient should do, using the following format:
 
-Assessment/Diagnosis: [one word]  
+Assessment/Diagnosis: [a single medical term]  
 Recommendation: [max. two short sentences]
 
 Only answer in English. Do not include any additional explanation or greeting.
