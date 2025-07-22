@@ -1,7 +1,0 @@
-
-# llm
-
-This module generates questions based on the symptoms of a User. 
-Lastly the module is generated using the symptoms and the answers given by the user. 
-For this purpose two function were defined which both use ollama to generate the corresponding output
-

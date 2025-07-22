@@ -1,9 +1,12 @@
-function splitDiagnosisAndRecommendation(fullText) {
-    let diagnosis = fullText;
+
+// function to split full diagnosis text into diagnosis and recommendation
+function splitDiagnosisRecommendation(diagnosisText) {
+    let diagnosis = "";
     let recommendation = "";
 
-    const diagnosisMatch = fullText.match(/Assessment\/Diagnosis:\s*(.+)/i);
-    const recommendationMatch = fullText.match(/Recommendation:\s*(.+)/i);
+    const diagnosisMatch = diagnosisText.match(/Diagnosis:\s*(.*)/i);
+  
+    const recommendationMatch = diagnosisText.match(/Recommendation:\s*(.*)/i);
 
     if (diagnosisMatch) {
         diagnosis = diagnosisMatch[1].trim();
@@ -16,4 +19,4 @@ function splitDiagnosisAndRecommendation(fullText) {
     return { diagnosis, recommendation };
 }
 
-module.exports = { splitDiagnosisAndRecommendation };
+module.exports = { splitDiagnosisRecommendation };

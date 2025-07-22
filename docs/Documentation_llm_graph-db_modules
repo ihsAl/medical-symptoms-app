@@ -1,0 +1,99 @@
+
+# llm - Folder
+
+this folder includes all modules that include communication with a local llm (Ollama) (+splitDiagnosisRecommendation which doesn't directly communicate with a llm but processes an output of the llm further)
+
+# llmService
+This node.js-module serves to establish communication with ollama (lokal llm). Here the model mistral-instruct is used, which usually performs better in dialogue and instruction-following compared to the normal mistral model. It is necessary to pull this model in order to use it. This model uses axios to make HTTP requests to the local Ollama-API
+
+needed Installations:
+
+install node.js: https://nodejs.org/en
+
+npm install axios --> install node.js module 'axios'
+
+install ollama via website: https://ollama.com/download
+
+ollama pull mistral:instruct  --> pull model
+
+ollama run mistral:instruct  --> run model
+
+
+# llmQuestionsDiagnosis - Question and Diagnosis Generator
+This module describes two functions which interact with a local LLM (Ollama).
+1. getFollowUpQuestions(symptoms, previousAnswer): This function generates a medical follow up question using Ollama according to the reported symptoms and previous answers. 
+2. getDiagnosis(symptoms, answers): This function returns a possible medical diagnosis and a recommendation according to the symptoms and given answers
+
+To get the questions, diagnosis and recommendation these functions use a prompt directed to the local Ollama API using 'axios'. 
+
+# llmTest - testFile to test the two functions in llmQuestionsDiagnosis 
+Test question generation and diagnosis/recommendation generation
+
+
+# extractSymptoms - Extraction of Symptoms from a text 
+This node.js module also uses a prompt directed to ollama to extract medical symptoms from a text. The return is an array of distinct symptoms in JSON. 
+
+# testExtractSymptoms - test file to test extractSymptoms - module 
+test extraction of symptoms from a defined text
+
+# splitDiagnosisRecommendation
+this module defines one function which uses Regex to locate and extract the diagnosis and recommendation from a text. The return values are the seperated values of diagnosis and recommendation 
+
+
+# graph-db folder
+this folder contains all modules who are related to storage in a neo4j database or who are related with querying a neo4j database
+
+# neo4jService - connect to neo4j
+This module establishes a connection to a local neo4j database using 'neo4j-driver' (=node.js-bib to get access to neo4j db directly from JS/Node.js-module). This module is used by all other models which want to run queries.
+
+Required installations:
+
+npm install neo4j-driver --> bib to use cypher, get connection, etc. 
+
+neo4j sever must be running locally on port 7687 --> use docker:
+
+docker run \
+  --name neo4j-llm \
+  -p7474:7474 -p7687:7687 \
+  -e NEO4J_AUTH=neo4j/llmproject2025 \
+  neo4j:5
+
+# storeData - store patient case in neo4j 
+this module includes the function savePatientCase() which stores a complete patient case including the symptoms, the follow-up questions with the corresponding answers, the final diagnosis and recommendation in a neo4j database. To do this this function uses cypher queries which is why this modules needs the connection to neo4jService.js 
+
+# diagnosisCache 
+this module describes a function cacheDiagnosis which tries to reuse existing datasets (diagnosis) by trying to match exiting patient cases with the current reported symptoms. 
+This module is useful for performance reasons because it avoids repeated llms calls for known symptoms.
+To get a diagnosis from the cache all symptoms must match with a previously reported one. 
+
+# llmInteractive - Interactive medical app in terminal 
+Runs entire system from symptom input to diagnosis within the terminal. 
+1. collects symptoms (user input) via terminal
+2. extracts symptoms from user input using llm --> extractSymptoms()
+3. generates medical follow up questions using LLM --> llmQuestionsDiagnosis()
+4. Search for diagnosis in neo4j db if symptoms match
+5. generate new diagnosis with llm if no match is found
+6. save patient case in neo4j 
+
+run this using: node llmInteractive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

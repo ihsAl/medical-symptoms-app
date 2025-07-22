@@ -1,62 +1,28 @@
-Diagnosistestdaten-Idee:
-1. Symptome aus Phrasen generieren.
-2. Symptome speichern in den Graph.
-2. LLM-Diagnose ziehen und vergleichen mit richtiger Diagnose aus der Datei.
-3. Ergebnis speichern in ein Array (true/false)
+TESTING DOCUMENTATION
 
-If All Fails:
-1. Run manually.
+// ALGORITHM FOR TESTING LLM
+1. Pull the data out of a csv file and save as dataset.js (using readCSV.js file)
+2. Use symptom phrases to generate diagnosis with LLM.
+3. Compare LLM diagnosis with diagnosis from the dataset.
+4. Save the result in a correctAnswers Array (true/false)
+5. Count the amount of correct and wrong answers, give it out in terminal
 
 
 // INSTALLATION STEPS
-1. Install SQLite
-https://www.sqlite.org/download.html
-download last zip with .exe files inside
-https://dev.to/dendihandian/installing-sqlite3-in-windows-44eb
-follow the steps
 1. Run the following command to install csv for reading the test csv data file.
 npm install csv
 
+// RUNNING THE TEST PROGRAM
+1. Go into the 'testing' folder and run:
+node datasetTest
+
+// KNOWN BUGS
+1. When running the program on a large file, the system can't handle it,
+so I divided the dataset file into three files
 
 
-
-// this reads data from csv file
-// all functions need to run inside the stream
-const readCSVData = async () => new Promise((resolve, reject) => {
-let dataset = []
-fs.createReadStream("./Symptom2Disease_first50.csv")
-  .pipe(
-    parse({
-      delimiter: ";",
-      from_line: 2
-    })
-  )
-  .on("data", function (row) {
-    resolve(dataset)
-    // 👇 push the object row into the array
-    dataset.push(row);
-  })
-  .on("error", function (error) {
-    console.log(error.message);
-  })
-  .on("end", function () {
-    // 👇 log the result array
-    return
-  })
-});
-
-readCSVData().then(dataset => console.log(dataset));
-
-console.log(dataset)
-
-// let symptoms = extractSymptoms(dataset[0][2]);
-// console.log(symptoms)
-// if (!Array.isArray(symptoms)){
-//     symptoms = symptoms ? [symptoms] : [];
-//     console.log(symptoms);
-// }
-// else {
-//     //  save 0 to array
-//     // run function again
-//     return
-// };
+// LATEST RUN RESULTS: dataset (first dataset, two more remaining)
+Amount of correct answers
+75
+Amount of wrong answers
+258
