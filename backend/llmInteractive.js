@@ -5,28 +5,9 @@ const { getFollowUpQuestions, getDiagnosis } = require('../llm/llmQuestionsDiagn
 const { extractSymptoms } = require('../llm/extractSymptoms');
 const { savePatientCase } = require('../graph-db/storeData');
 const { cacheDiagnosis } = require('../graph-db/diagnosisCache');
+const { splitDiagnosisRecommendation } = require('../llm/splitDiagnosisRecommendation');
 
 
-
-// function to split full diagnosis text into diagnosis and recommendation
-function splitDiagnosisRecommendation(diagnosisText) {
-    let diagnosis = "";
-    let recommendation = "";
-
-    const diagnosisMatch = diagnosisText.match(/Diagnosis:\s*(.*)/i);
-  
-    const recommendationMatch = diagnosisText.match(/Recommendation:\s*(.*)/i);
-
-    if (diagnosisMatch) {
-        diagnosis = diagnosisMatch[1].trim();
-    }
-
-    if (recommendationMatch) {
-        recommendation = recommendationMatch[1].trim();
-    }
-
-    return { diagnosis, recommendation };
-}
 
 console.log('start llm medical symptoms app');
 
