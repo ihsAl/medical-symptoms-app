@@ -5,7 +5,7 @@ cd frontend in the terminal (to Navigate to the frontend)
 npm install (to install everything from the package.json)
 
 How to start the application:
-be sure that the backend server is already running (looking into documentation of backend for that)
+be sure that the backend server is already running (cd backend and the node test_backend)
 cd frontend
 npm run dev
 
