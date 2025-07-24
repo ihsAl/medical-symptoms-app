@@ -10,7 +10,7 @@ A patient reports symptoms: ${symptoms}.
 Based on previous answers:
 ${previousAnswer.map((a,i) => `Answer ${i+1}: ${a}`).join('\n')}
 
-Ask exactly one specific, clear medical follow-up question.
+Ask exactly one specific, clear medical follow-up question. 
 
 Rules:
 - Do NOT use "or" or "and".
@@ -47,6 +47,9 @@ Recommendation: [max. two short sentences]
 Only answer in English. Do not include any additional explanation or greeting.
 **In the diagnosis do not use "()" only one word**
 `;
+
+    //console.log('prompt an llm:');
+    //console.log(prompt);
     return await askLLM(prompt);
 }
 
