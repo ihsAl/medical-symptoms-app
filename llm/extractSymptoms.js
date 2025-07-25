@@ -28,7 +28,8 @@ Response format: ["symptom1", "symptom2", ...]
     try {
         // clean response from backslahes to avoid error
         const cleanResponse = response.replace(/\\_/g, '_');
-        const symptoms = JSON.parse(cleanResponse);
+        const cleanerResponse = cleanResponse.replace(/\\/g, '');
+        const symptoms = JSON.parse(cleanerResponse);
 
         // normalize symptoms 
         const normalizedSymptoms = symptoms.map(normalizeSymptom);

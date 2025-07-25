@@ -3,7 +3,7 @@ const { extractSymptoms } = require('../llm/extractSymptoms');
 const { getDiagnosis } = require('../llm/llmQuestionsDiagnosis');
 const { splitDiagnosisRecommendation } = require('../llm/splitDiagnosisRecommendation');
 // file which is used to test LLM answers
-const { dataset2 } = require('./dataset2.js')
+const { dataset1 } = require('./dataset1.js')
 
 // array collecting True/False values for LLM giving out the same diagnosis as the dataset
 let correctAnswers = []
@@ -31,7 +31,7 @@ let correctAnswers = []
 // testing LLM answers on file with diagnosis and symptoms
 async function testDataset(testCase) {
   try { // extracting symptoms from csv array
-    let symptoms = await extractSymptoms(dataset2[testCase][2]);
+    let symptoms = await extractSymptoms(dataset1[testCase][2]);
     if (!Array.isArray(symptoms)){
       symptoms = symptoms ? [symptoms] : [];
     }
@@ -43,7 +43,7 @@ async function testDataset(testCase) {
     // recommendation is not used anywhere in this function
     const { diagnosis, recommendation } = splitDiagnosisRecommendation(diagnosisFull);
     // if diagnosis from LLM is same as in the test case, save 1, otherwise 0
-    if (diagnosis == dataset2[testCase][1]){ 
+    if (diagnosis == dataset1[testCase][1]){ 
         correctAnswers.push(1)
       } else {
         correctAnswers.push(0);
@@ -61,10 +61,10 @@ async function testDataset(testCase) {
   }
 }
 
-for (let indexCase = 0; indexCase < dataset2.length; indexCase++) {
-  testDataset(indexCase)
-}
-
-// for (let indexCase = 0; indexCase < 50; indexCase++) {
+// for (let indexCase = 0; indexCase < dataset1.length; indexCase++) {
 //   testDataset(indexCase)
 // }
+
+for (let indexCase = 0; indexCase < 1; indexCase++) {
+  testDataset(indexCase)
+}
