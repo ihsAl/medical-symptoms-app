@@ -22,6 +22,7 @@ async function cacheDiagnosis(symptomList) {
             const record = result.records[0];
             const diagnosis = record.get('diagnosis');
             const patientId = record.get('patientId');
+            const recommendation = record.get('recommendation');
 
              if (!diagnosis || diagnosis.trim() === "") {
                 return { cached: false };
@@ -31,7 +32,8 @@ async function cacheDiagnosis(symptomList) {
                 return {
                 cached: true,
                 diagnosis: record.get('diagnosis'),
-                patientId: record.get('patientId')
+                patientId: record.get('patientId'),
+                recommendation: record.get('recommendation'),
 
                 };
 

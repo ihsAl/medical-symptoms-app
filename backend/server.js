@@ -110,6 +110,7 @@ wss.on('connection', (ws) => {
 
     let diagnosisFull;
     if (cached?.cached && cached.diagnosis?.trim()) {
+      ws.send("Diagnose aus dem Cache");
       diagnosisFull = `Diagnosis: ${cached.diagnosis}\nRecommendation: ${cached.recommendation}`;
     } else {
       diagnosisFull = await getDiagnosis(
