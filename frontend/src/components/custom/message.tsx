@@ -45,19 +45,24 @@ export const ThinkingMessage = () => {
 
   return (
     <motion.div
-      className="w-full mx-auto max-w-3xl px-4 group/message "
+      className="w-full mx-auto max-w-3xl px-4 group/message"
       initial={{ y: 5, opacity: 0 }}
       animate={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
       data-role={role}
     >
       <div
         className={cx(
-          'flex gap-4 group-data-[role=user]/message:px-3 w-full group-data-[role=user]/message:w-fit group-data-[role=user]/message:ml-auto group-data-[role=user]/message:max-w-2xl group-data-[role=user]/message:py-2 rounded-xl',
-          'group-data-[role=user]/message:bg-muted'
+          'flex gap-4 px-3 py-2 w-fit max-w-2xl rounded-xl bg-background text-foreground'
         )}
       >
         <div className="size-8 flex items-center rounded-full justify-center ring-1 shrink-0 ring-border">
           <BotIcon size={14} />
+        </div>
+
+        <div className="flex gap-1 items-center">
+          <span className="animate-bounce w-2 h-2 bg-gray-500 rounded-full [animation-delay:0ms]"></span>
+          <span className="animate-bounce w-2 h-2 bg-gray-500 rounded-full [animation-delay:150ms]"></span>
+          <span className="animate-bounce w-2 h-2 bg-gray-500 rounded-full [animation-delay:300ms]"></span>
         </div>
       </div>
     </motion.div>

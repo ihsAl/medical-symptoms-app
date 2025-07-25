@@ -29,6 +29,11 @@ Examples:
 
 Answer only with the question, in English.
 `
+
+    console.log("→ Prompt an LLM:");
+    console.log("Symptome:", symptoms);
+    console.log("Fragen+Antworten:", previousAnswer);
+
     return await askLLM(prompt);
 }
 
@@ -38,7 +43,7 @@ Symptoms: ${symptoms}
 Answers:  
 ${answers.join('\n')}
 
-Provide a possible **medical diagnosis** 
+Provide a clear and specific **medical diagnosis** 
 and a recommendation for what the patient should do, using the following format:
 
 Assessment/Diagnosis: [a single medical term]  
@@ -48,8 +53,8 @@ Only answer in English. Do not include any additional explanation or greeting.
 **In the diagnosis do not use "()" only one word**
 `;
 
-    //console.log('prompt an llm:');
-    //console.log(prompt);
+    console.log('prompt an llm:');
+    console.log(prompt);
     return await askLLM(prompt);
 }
 

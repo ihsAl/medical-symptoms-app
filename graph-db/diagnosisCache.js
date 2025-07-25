@@ -10,7 +10,7 @@ async function cacheDiagnosis(symptomList) {
             WITH p, collect(DISTINCT s.name) AS symptoms
             WHERE all(sym IN $inputSymptoms WHERE sym IN symptoms)
             MATCH (p)-[:HAS_DIAGNOSIS]->(d:Diagnosis)
-            RETURN d.text AS diagnosis, p.id AS patientId
+            RETURN d.text AS diagnosis, p.id AS patientId, d.recommendation AS recommendation
             LIMIT 1
             `,
             { inputSymptoms: symptomList }

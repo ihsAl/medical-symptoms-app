@@ -5,114 +5,147 @@ const { savePatientCase } = require('../graph-db/storeData');
 const { cacheDiagnosis } = require('../graph-db/diagnosisCache');
 const crypto = require('crypto');
 
+function createNewSession() {
+  return {
+    step: 0,
+    //age: null,
+    //gender: null,
+    symptomsText: '',
+    symptoms: [],
+    answers: [],
+    questionCount: 0,
+    maxQuestions: 5,
+    currentQuestion: ''
+  };
+}
+
 const wss = new WebSocket.Server({ port: 8090 });
 
 wss.on('connection', (ws) => {
   console.log('Client connected');
 
-  let session = {
-    step: 0,
-    age: null,
-    gender: null,
-    symptomsText: '',
-    symptoms: [],
-    answers: [],
-    questionCount: 0,
-    maxQuestions: 3,
-    currentQuestion: ''
-  };
+  let session = createNewSession();
 
   ws.on('message', async (message) => {
     const text = message.toString().trim();
 
     try {
       switch (session.step) {
-        case 0:
-          ws.send("Wie alt ist der Patient?");
-          session.step++;
-          break;
+  
+  // Case 2 – Symptome abfragen
+  case 0:
+    
+    ws.send("What are your symptoms");
+    session.step = 1;
+    break;
 
-        case 1:
-          session.age = text;
-          ws.send("Was ist das Geschlecht des Patienten?");
-          session.step++;
-          break;
+  // Case 1 – Symptome analysieren und erste Frage stellen
+  case 1:
+    session.symptomsText = text;
+    const extracted = await extractSymptoms(text);
+    session.symptoms = Array.isArray(extracted) ? extracted : (extracted ? [extracted] : []);
+    session.step = 2;
 
-        case 2:
-          session.gender = text;
-          ws.send("Welche Symptome hast du?");
-          session.step++;
-          break;
+    const firstQuestion = await getFollowUpQuestions(
+      session.symptoms,
+      session.answers.map(a => `${a.question} Answer: ${a.answer}`)
+    );
 
-        case 3:
-          session.symptomsText = text;
-          const extracted = await extractSymptoms(text);
-          session.symptoms = Array.isArray(extracted) ? extracted : (extracted ? [extracted] : []);
+    if (firstQuestion && firstQuestion.trim() !== "") {
+      session.currentQuestion = firstQuestion.trim();
+      session.questionCount++;
+      ws.send(session.currentQuestion);
+      session.step = 3; // → Warte auf Antwort
+    } else {
+      session.step = 4; // → Sofort zur Diagnose
+      ws.emit('message', '');
+    }
+    break;
 
-          const followUp = await getFollowUpQuestions(session.symptoms, []);
-          session.currentQuestion = followUp;
-          session.questionCount++;
-          session.step++;
-          ws.send(followUp);
-          break;
+  // Case 5 – Folgefragen/Antworten
+  case 3: {
+    const answer = text;
 
-        case 4:
-          // Speichere Antwort und ggf. weitere Symptome
-        session.answers.push({
-            question: session.currentQuestion,
-            answer: text
-          });
+    session.answers.push({
+      question: session.currentQuestion,
+      answer: answer
+    });
 
-          
-
-          if (text.toLowerCase().startsWith('ja') || text.toLowerCase().startsWith('yes')) {
-            const extra = await extractSymptoms(session.currentQuestion);
-            if (extra) {
-              const extras = Array.isArray(extra) ? extra : [extra];
-              session.symptoms = [...new Set([...session.symptoms, ...extras.map(s => s.toLowerCase().trim())])];
-            }
-          }
-
-          if (session.questionCount < session.maxQuestions) {
-            const nextQ = await getFollowUpQuestions(session.symptoms, session.answers);
-            session.currentQuestion = nextQ;
-            session.questionCount++;
-            ws.send(nextQ);
-          } else {
-            // Diagnoseprozess
-            ws.send("\nPrüfe, ob Diagnose bereits im Cache vorhanden ist...\n");
-            const cached = await cacheDiagnosis(session.symptoms);
-
-            let diagnosisFull;
-            if (cached && cached.cached === true && cached.diagnosis?.trim()) {
-              diagnosisFull = `Diagnosis: ${cached.diagnosis}\nRecommendation: (aus Cache – keine Empfehlung gespeichert)`;
-            } else {
-              diagnosisFull = await getDiagnosis(session.symptoms, session.answers);
-            }
-
-            // optional: Diagnose splitten
-            const diagnosisMatch = diagnosisFull.match(/Diagnosis:\s*(.*)/i);
-            const recommendationMatch = diagnosisFull.match(/Recommendation:\s*(.*)/i);
-            const diagnosis = diagnosisMatch ? diagnosisMatch[1].trim() : '';
-            const recommendation = recommendationMatch ? recommendationMatch[1].trim() : '';
-
-            await savePatientCase({
-              patientId: "patient_" + crypto.randomUUID(),
-              age: session.age,
-              gender: session.gender,
-              allSymptoms: session.symptoms,
-              followUpQA: session.answers.map(ans => ({ question: ans.question, answer: ans.answer })),
-              diagnosis,
-              recommendation
-            });
-
-            ws.send(diagnosisFull);
-            ws.send('[END]');
-            session = null;
-          }
-
-          break;
+    if (answer.toLowerCase().startsWith('ja') || answer.toLowerCase().startsWith('yes')) {
+      const extra = await extractSymptoms(session.currentQuestion);
+      if (extra) {
+        const extras = Array.isArray(extra) ? extra : [extra];
+        session.symptoms = [...new Set([...session.symptoms, ...extras.map(s => s.toLowerCase().trim())])];
       }
+    }
+
+    if (session.questionCount < session.maxQuestions) {
+      const nextQ = await getFollowUpQuestions(
+        session.symptoms,
+        session.answers.map(a => `"${a.question}" Answer: ${a.answer}`)
+      );
+
+      if (nextQ && !session.answers.some(a => a.question.trim() === nextQ.trim())) {
+        session.currentQuestion = nextQ.trim();
+        session.questionCount++;
+        ws.send(session.currentQuestion);
+        // Bleibe in Step 5
+      } else {
+        session.step = 4;
+        ws.emit('message', '');
+      }
+    } else {
+      session.step = 4;
+      ws.emit('message', '');
+    }
+
+    break;
+  }
+
+  // Case 4 – Diagnose ermitteln und speichern
+  case 4:
+    ws.send("\nGet Diagnosis...\n");
+
+    const cached = await cacheDiagnosis(session.symptoms);
+
+    let diagnosisFull;
+    if (cached?.cached && cached.diagnosis?.trim()) {
+      diagnosisFull = `Diagnosis: ${cached.diagnosis}\nRecommendation: ${cached.recommendation}`;
+    } else {
+      diagnosisFull = await getDiagnosis(
+        session.symptoms,
+        session.answers.map(a => `${a.question} Answer: ${a.answer}`)
+      );
+    }
+
+    const diagnosisMatch = diagnosisFull.match(/Diagnosis:\s*(.*)/i);
+    const recommendationMatch = diagnosisFull.match(/Recommendation:\s*(.*)/i);
+    const diagnosis = diagnosisMatch ? diagnosisMatch[1].trim() : '';
+    const recommendation = recommendationMatch ? recommendationMatch[1].trim() : '';
+
+    await savePatientCase({
+      patientId: "patient_" + crypto.randomUUID(),
+      //age: session.age,
+      //gender: session.gender,
+      allSymptoms: session.symptoms,
+      followUpQA: session.answers.map(ans => ({ question: ans.question, answer: ans.answer })),
+      diagnosis,
+      recommendation
+    });
+
+    ws.send(JSON.stringify({
+      type: 'diagnosis',
+      diagnosis,
+      recommendation
+    }));
+
+    ws.send("[END]");
+    session = createNewSession();
+    break;
+}
+
+
+        
 
     } catch (err) {
       console.error("Fehler:", err);

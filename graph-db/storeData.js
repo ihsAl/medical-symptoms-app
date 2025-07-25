@@ -1,14 +1,14 @@
 // storeData.js
 const { driver } = require('./neo4jService');
 
-async function savePatientCase({patientId, age, gender, allSymptoms, followUpQA, diagnosis, recommendation}) {
+async function savePatientCase({patientId, allSymptoms, followUpQA, diagnosis, recommendation}) {
     const session = driver.session();
     try {
         const result = await session.writeTransaction(tx =>
             tx.run(
                 `
                 MERGE (p:Patient {id: $patientId})
-                SET p.age = $age, p.gender = $gender
+                
 
                 WITH p
                 UNWIND $symptoms AS sym
@@ -30,8 +30,8 @@ async function savePatientCase({patientId, age, gender, allSymptoms, followUpQA,
                 `,
                 {
                     patientId,
-                    age,
-                    gender,
+                    
+                    
                     symptoms: allSymptoms,
                     qa: followUpQA,
                     diagnosis,
