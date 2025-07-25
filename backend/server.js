@@ -18,7 +18,8 @@ wss.on('connection', (ws) => {
     symptoms: [],
     answers: [],
     questionCount: 0,
-    maxQuestions: 3
+    maxQuestions: 3,
+    currentQuestion: ''
   };
 
   ws.on('message', async (message) => {
@@ -47,7 +48,9 @@ wss.on('connection', (ws) => {
           session.symptomsText = text;
           const extracted = await extractSymptoms(text);
           session.symptoms = Array.isArray(extracted) ? extracted : (extracted ? [extracted] : []);
+
           const followUp = await getFollowUpQuestions(session.symptoms, []);
+          session.currentQuestion = followUp;
           session.questionCount++;
           session.step++;
           ws.send(followUp);
@@ -55,10 +58,15 @@ wss.on('connection', (ws) => {
 
         case 4:
           // Speichere Antwort und ggf. weitere Symptome
-          session.answers.push(text);
+        session.answers.push({
+            question: session.currentQuestion,
+            answer: text
+          });
+
+          
 
           if (text.toLowerCase().startsWith('ja') || text.toLowerCase().startsWith('yes')) {
-            const extra = await extractSymptoms(session.answers[session.answers.length - 1]);
+            const extra = await extractSymptoms(session.currentQuestion);
             if (extra) {
               const extras = Array.isArray(extra) ? extra : [extra];
               session.symptoms = [...new Set([...session.symptoms, ...extras.map(s => s.toLowerCase().trim())])];
@@ -67,6 +75,7 @@ wss.on('connection', (ws) => {
 
           if (session.questionCount < session.maxQuestions) {
             const nextQ = await getFollowUpQuestions(session.symptoms, session.answers);
+            session.currentQuestion = nextQ;
             session.questionCount++;
             ws.send(nextQ);
           } else {
@@ -92,7 +101,7 @@ wss.on('connection', (ws) => {
               age: session.age,
               gender: session.gender,
               allSymptoms: session.symptoms,
-              followUpQA: session.answers.map(ans => ({ question: 'Follow-Up', answer: ans })),
+              followUpQA: session.answers.map(ans => ({ question: ans.question, answer: ans.answer })),
               diagnosis,
               recommendation
             });

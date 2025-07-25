@@ -8,7 +8,6 @@ const { cacheDiagnosis } = require('../graph-db/diagnosisCache');
 const { splitDiagnosisRecommendation } = require('../llm/splitDiagnosisRecommendation');
 
 
-
 console.log('start llm medical symptoms app');
 
 // readline-interface to enable interaction with the terminal
@@ -34,13 +33,20 @@ async function askQuestion(prompt) {
         const gender = await askQuestion("What is the patients gender? ");
         
         // store user input as string (answer to "what are yout symptoms?")
-        let userInput = await askQuestion("Welche Symptome hast du? ");
+        let userInput = await askQuestion("What are your symptoms? ");
 
         // extract symptoms from the user input and storage in array "symptoms"
         let symptoms = await extractSymptoms(userInput);
+
+        // debug
+        console.log("extractSymptoms(userInput):", symptoms);
+        
+        // transform symptoms into array (if not already) to process it easily
         if (!Array.isArray(symptoms)){
             symptoms = symptoms ? [symptoms] : [];
         }
+        //debug
+        console.log("\nAktuelle gesammelte Symptome:", symptoms.map(s => s.toLowerCase().trim()).join(', '));
 
         let answers = []; // stores question-answer-pairs
         let keepAsking = true;
@@ -56,7 +62,7 @@ async function askQuestion(prompt) {
                 // no answer --> system stops
                 keepAsking = false;
             } else {
-                answers.push(`${question} Antwort: ${answer}`);
+                answers.push(`${question} Answer: ${answer}`);
 
           // store symptom if user answers with yes
           if (answer.toLowerCase().startsWith('ja') || answer.toLowerCase().startsWith('yes')) {
@@ -67,33 +73,18 @@ async function askQuestion(prompt) {
                 : [symptomsFromQuestion];
 
             // get all symptoms in an array and delete duplicates
-            symptoms = [...new Set([...symptoms, ...newSympArr.map(s => s.toLowerCase().trim())])];
+            symptoms = [...new Set([...symptoms, ...newSympArr])];
     }
 }
 
 
-                
 
                 // output symptoms to test extractSymptoms-Function
                 console.log("\nAktuelle gesammelte Symptome:", symptoms.map(s => s.toLowerCase().trim()).join(', '));
             }
         }
 
-        // get diagnosis from llm
-// Versuch Cache-Diagnose zu finden
-//console.log("\nPrüfe, ob Diagnose bereits im Cache vorhanden ist...\n");
-//const cached = await cacheDiagnosis(symptoms);
-
-//let diagnosisFull;
-//if (cached) {
-//    console.log(`Gefundene Diagnose im Cache (PatientID: ${cached.patientId}): ${cached.diagnosis}`);
-//    diagnosisFull = `Diagnosis: ${cached.diagnosis}\nRecommendation: (aus Cache – keine Empfehlung gespeichert)`;
-//} else {
-//    console.log("Keine passende Diagnose im Cache gefunden. Hole Diagnose vom LLM...\n");
-//    diagnosisFull = await getDiagnosis(symptoms, answers);
-//}
-
-// Versuche Cache-Diagnose zu finden
+        
 console.log("\nPrüfe, ob Diagnose bereits im Cache vorhanden ist...\n");
 const cached = await cacheDiagnosis(symptoms);
 
@@ -112,11 +103,6 @@ if (cached && cached.cached === true && cached.diagnosis && cached.diagnosis.tri
 
 
 
-
-      //  console.log("\nHole Diagnose vom LLM...\n");
-       // const diagnosisFull = await getDiagnosis(symptoms, answers);
-       // console.log("Mögliche Diagnose / Empfehlung:\n");
-       // console.log(diagnosisFull);
 
 
         // extract diagnosis and recommendation
