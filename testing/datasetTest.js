@@ -1,36 +1,37 @@
 // functions used to evaluate correctness of LLM diagnosis
 const { extractSymptoms } = require('../llm/extractSymptoms');
 const { getDiagnosis } = require('../llm/llmQuestionsDiagnosis');
-// dataset which is used to test LLM answers
-const { dataset } = require('./dataset.js')
+const { splitDiagnosisRecommendation } = require('../llm/splitDiagnosisRecommendation');
+// file which is used to test LLM answers
+const { dataset2 } = require('./dataset2.js')
 
 // array collecting True/False values for LLM giving out the same diagnosis as the dataset
 let correctAnswers = []
 
 // needs to be moved
-function splitDiagnosisRecommendation(diagnosisText) {
-    let diagnosis = "";
-    let recommendation = "";
+// function splitDiagnosisRecommendation(diagnosisText) {
+//     let diagnosis = "";
+//     let recommendation = "";
 
-    const diagnosisMatch = diagnosisText.match(/Diagnosis:\s*(.*)/i);
+//     const diagnosisMatch = diagnosisText.match(/Diagnosis:\s*(.*)/i);
   
-    const recommendationMatch = diagnosisText.match(/Recommendation:\s*(.*)/i);
+//     const recommendationMatch = diagnosisText.match(/Recommendation:\s*(.*)/i);
 
-    if (diagnosisMatch) {
-        diagnosis = diagnosisMatch[1].trim();
-    }
+//     if (diagnosisMatch) {
+//         diagnosis = diagnosisMatch[1].trim();
+//     }
 
-    if (recommendationMatch) {
-        recommendation = recommendationMatch[1].trim();
-    }
+//     if (recommendationMatch) {
+//         recommendation = recommendationMatch[1].trim();
+//     }
 
-    return { diagnosis, recommendation };
-}
+//     return { diagnosis, recommendation };
+// }
 
-// testing LLM answers on dataset
+// testing LLM answers on file with diagnosis and symptoms
 async function testDataset(testCase) {
   try { // extracting symptoms from csv array
-    let symptoms = await extractSymptoms(dataset[testCase][2]);
+    let symptoms = await extractSymptoms(dataset2[testCase][2]);
     if (!Array.isArray(symptoms)){
       symptoms = symptoms ? [symptoms] : [];
     }
@@ -42,7 +43,7 @@ async function testDataset(testCase) {
     // recommendation is not used anywhere in this function
     const { diagnosis, recommendation } = splitDiagnosisRecommendation(diagnosisFull);
     // if diagnosis from LLM is same as in the test case, save 1, otherwise 0
-    if (diagnosis == dataset[testCase][1]){ 
+    if (diagnosis == dataset2[testCase][1]){ 
         correctAnswers.push(1)
       } else {
         correctAnswers.push(0);
@@ -60,10 +61,10 @@ async function testDataset(testCase) {
   }
 }
 
-for (let indexCase = 0; indexCase < dataset.length; indexCase++) {
+for (let indexCase = 0; indexCase < dataset2.length; indexCase++) {
   testDataset(indexCase)
 }
 
-// for (let indexCase = 0; indexCase < 700; indexCase++) {
+// for (let indexCase = 0; indexCase < 50; indexCase++) {
 //   testDataset(indexCase)
 // }

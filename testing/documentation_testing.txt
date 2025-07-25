@@ -17,8 +17,34 @@ npm install csv
 node datasetTest
 
 // KNOWN BUGS
-1. When running the program on a large file, the system can't handle it,
-so I divided the dataset file into three files
+1. When generating symptoms sometimes the LLM adds in spaces '_'.
+For example: 'neck_pain'. This leads to a normal, proper activation of the function.
+
+// not problematic
+Symptomtext:  My neck has been extremely tight and my muscles have been feeling extremely weak. My joints have been swollen and Ive been walking around with a lot of stiffness. Additionally, walking has been extremely uneasy.
+Symptoms Array: [
+  'tightness',
+  'neck_pain',
+  'weakness',
+  'muscle_weakness',
+  'swollen_joints',
+  'stiffness'
+]
+Symptome: tightness,neck_pain,weakness,muscle_weakness,swollen_joints,stiffness
+
+Sometimes the spaces are not there at all: 'balanceissues'
+
+// not problematic
+Symptomtext:  Ive been experiencing balance issues, a headache, chest pain, and dizziness. Ive also realised that Im having trouble focusing.
+response changed:  ["balanceissues", "headache", "chestpain", "dizziness"]
+[ 'balanceissues', 'headache', 'chestpain', 'dizziness' ]
+Symptome: balanceissues,headache,chestpain,dizziness
+
+// problematic: 
+
+Symptomtext:  I was in the middle of a meeting when I suddenly developed a headache, chest pain, and dizziness. Its been hard for me to focus and concentrate on the discussion since then.
+response changed:  ["headache", "chest\_pain", "dizziness"]
+Fehler beim Parsen der Symptome: Bad escaped character in JSON at position 21 (line 1 column 22)
 
 
 // LATEST RUN RESULTS: dataset (first dataset, two more remaining)

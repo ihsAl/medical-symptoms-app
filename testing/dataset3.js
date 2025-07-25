@@ -3,7 +3,7 @@
 [
   'test_Cervical spondylosis_151',
   'Cervical spondylosis',
-  "Along with a chronic cough and limb weakness, I've been dealing with excruciating back discomfort. I've been experiencing neck pain as well as vertigo and instability."    
+  'Along with a chronic cough and limb weakness, I've been dealing with excruciating back discomfort. I've been experiencing neck pain as well as vertigo and instability.'    
 ],
 [
   'test_Cervical spondylosis_152',
@@ -13,22 +13,22 @@
 [
   'test_Cervical spondylosis_153',
   'Cervical spondylosis',
-  "Back pain, a hacking cough, and numbness in my arms and legs have been bothering me. In addition, my neck hurts, and I've having trouble staying balanced and without getting lightheaded."
+  'Back pain, a hacking cough, and numbness in my arms and legs have been bothering me. In addition, my neck hurts, and I've having trouble staying balanced and without getting lightheaded.'
 ],
 [
   'test_Cervical spondylosis_154',
   'Cervical spondylosis',
-  "Back pain, a coughing cough, and numbness in my arms and legs have been plaguing me. In addition, my neck hurts, and I've having trouble staying balanced and without getting woozy."
+  'Back pain, a coughing cough, and numbness in my arms and legs have been plaguing me. In addition, my neck hurts, and I've having trouble staying balanced and without getting woozy.'
 ],
 [
   'test_Cervical spondylosis_155',
   'Cervical spondylosis',
-  "Pain typically, a coughing cough, and numbness in my arms and legs have been plaguing me. In addition, my neck hurts, and I've having trouble staying balanced and without getting woozy."
+  'Pain typically, a coughing cough, and numbness in my arms and legs have been plaguing me. In addition, my neck hurts, and I've having trouble staying balanced and without getting woozy.'
 ],
 [
   'test_Cervical spondylosis_156',
   'Cervical spondylosis',
-  "I have been struggling with back pain, a cough that won't go away, and weakness in my extremities. My neck hurts and I have had problems with dizziness and losing my balance."
+  'I have been struggling with back pain, a cough that won't go away, and weakness in my extremities. My neck hurts and I have had problems with dizziness and losing my balance.'
 ],
 [
   'test_Cervical spondylosis_157',
@@ -48,17 +48,17 @@
 [
   'test_Cervical spondylosis_160',
   'Cervical spondylosis',
-  "I've been struggling with severe back pain, a dry cough, and limb weakness. I've been feeling lightheaded and wobbly on my feet, and my neck hurts."
+  'I've been struggling with severe back pain, a dry cough, and limb weakness. I've been feeling lightheaded and wobbly on my feet, and my neck hurts.'
 ],
 [
   'test_Cervical spondylosis_161',
   'Cervical spondylosis',
-  "I've been battling with back pain, a dry cough, and limb weakness. I've been feeling dizzy and unstable on my feet, and my neck hurts."
+  'I've been battling with back pain, a dry cough, and limb weakness. I've been feeling dizzy and unstable on my feet, and my neck hurts.'
 ],
 [
   'test_Cervical spondylosis_162',
   'Cervical spondylosis',
-  "I've been struggling with back pain, a chronic cough, and limb weakness. I've been feeling disoriented and weak on my feet, and my neck hurts."
+  'I've been struggling with back pain, a chronic cough, and limb weakness. I've been feeling disoriented and weak on my feet, and my neck hurts.'
 ],
 [
   'test_Cervical spondylosis_163',
@@ -98,32 +98,32 @@
 [
   'test_Cervical spondylosis_170',
   'Cervical spondylosis',
-  "I've been having intermittent coughing fits, significant back pain, and limb weakness. I've been experiencing neck pain as well as a dizzy and unsteady sensation."
+  'I've been having intermittent coughing fits, significant back pain, and limb weakness. I've been experiencing neck pain as well as a dizzy and unsteady sensation.'
 ],
 [
   'test_Cervical spondylosis_171',
   'Cervical spondylosis',
-  "I've been having periodic coughing fits, terrible back pain, and limb weakness. I've been feeling neck pain as well as a dizzy and unstable sensation."
+  'I've been having periodic coughing fits, terrible back pain, and limb weakness. I've been feeling neck pain as well as a dizzy and unstable sensation.'
 ],
 [
   'test_Cervical spondylosis_172',
   'Cervical spondylosis',
-  "I have been dealing with back pain, a cough that won't go away, and weakness in my arms and legs. My neck hurts and I have had problems with dizziness and maintaining my balance."
+  'I have been dealing with back pain, a cough that won't go away, and weakness in my arms and legs. My neck hurts and I have had problems with dizziness and maintaining my balance.'
 ],
 [
   'test_Cervical spondylosis_173',
   'Cervical spondylosis',
-  "Back pain, a persistent cough, and numbness in my arms and legs have been bothering me. I've had trouble staying balanced and experiencing dizziness, and my neck hurts."   
+  'Back pain, a persistent cough, and numbness in my arms and legs have been bothering me. I've had trouble staying balanced and experiencing dizziness, and my neck hurts.'   
 ],
 [
   'test_Cervical spondylosis_174',
   'Cervical spondylosis',
-  "Back pain, a dry cough, and stiffness in my arms and legs have been bothering me. I've had problems staying balanced and experience dizziness, and my neck hurts."
+  'Back pain, a dry cough, and stiffness in my arms and legs have been bothering me. I've had problems staying balanced and experience dizziness, and my neck hurts.'
 ],
 [
   'test_Cervical spondylosis_175',
   'Cervical spondylosis',
-  "I've been experiencing back pain, a persistent cough, and numbness in my arms and legs. I've been having trouble staying balanced and managing my vertigo, and my neck hurts."
+  'I've been experiencing back pain, a persistent cough, and numbness in my arms and legs. I've been having trouble staying balanced and managing my vertigo, and my neck hurts.'
 ],
 [
   'test_Cervical spondylosis_176',
@@ -133,12 +133,12 @@
 [
   'test_Cervical spondylosis_177',
   'Cervical spondylosis',
-  "Back pain, a persistent cough, and arm and leg weakness have been bothering me. I've been experiencing neck pain, balance issues, and dizziness."
+  'Back pain, a persistent cough, and arm and leg weakness have been bothering me. I've been experiencing neck pain, balance issues, and dizziness.'
 ],
 [
   'test_Cervical spondylosis_178',
   'Cervical spondylosis',
-  "Back pain, a persistent cough, and numbness in my arms and legs have been bothering me. I've had trouble staying balanced and experiencing dizziness, and my neck hurts."   
+  'Back pain, a persistent cough, and numbness in my arms and legs have been bothering me. I've had trouble staying balanced and experiencing dizziness, and my neck hurts.'   
 ],
 [
   'test_Cervical spondylosis_179',
@@ -148,22 +148,22 @@
 [
   'test_Cervical spondylosis_180',
   'Cervical spondylosis',
-  "Back pain, a dry cough, and a lack of muscle strength have been bothering me. My neck hurts, and I've been feeling lightheaded and shaky."
+  'Back pain, a dry cough, and a lack of muscle strength have been bothering me. My neck hurts, and I've been feeling lightheaded and shaky.'
 ],
 [
   'test_Cervical spondylosis_181',
   'Cervical spondylosis',
-  "My muscles lack strength, and I have been experiencing back pain and a dry cough. I've been experiencing neck pain and feeling lightheaded and unstable on my feet."        
+  'My muscles lack strength, and I have been experiencing back pain and a dry cough. I've been experiencing neck pain and feeling lightheaded and unstable on my feet.'        
 ],
 [
   'test_Cervical spondylosis_182',
   'Cervical spondylosis',
-  "My muscles haven't been very strong, and I've been experiencing back ache. I've been feeling lightheaded and wobbly on my feet, and my neck hurts."
+  'My muscles haven't been very strong, and I've been experiencing back ache. I've been feeling lightheaded and wobbly on my feet, and my neck hurts.'
 ],
 [
   'test_Cervical spondylosis_183',
   'Cervical spondylosis',
-  "I've been experiencing back pain, a dry cough, and muscle weakness. I've been experiencing neck pain, feeling lightheaded, and having trouble standing still."
+  'I've been experiencing back pain, a dry cough, and muscle weakness. I've been experiencing neck pain, feeling lightheaded, and having trouble standing still.'
 ],
 [
   'test_Cervical spondylosis_184',
@@ -173,17 +173,17 @@
 [
   'test_Cervical spondylosis_185',
   'Cervical spondylosis',
-  "I've had terrible back pain, a persistent cough, and weakness in my arms and legs. I have issues with dizziness and balance loss, and my neck hurts."
+  'I've had terrible back pain, a persistent cough, and weakness in my arms and legs. I have issues with dizziness and balance loss, and my neck hurts.'
 ],
 [
   'test_Cervical spondylosis_186',
   'Cervical spondylosis',
-  "I've been suffering from severe back pain, a persistent cough, and numbness in my arms and legs. I've been experiencing issues with vertigo and balance issues, and my neck hurts."
+  'I've been suffering from severe back pain, a persistent cough, and numbness in my arms and legs. I've been experiencing issues with vertigo and balance issues, and my neck hurts.'
 ],
 [
   'test_Cervical spondylosis_187',
   'Cervical spondylosis',
-  "Along with a persistent cough, weakness in my arms and legs, and severe back pain, I've been having a lot of trouble. I've experienced issues with vertigo and balance loss, and my neck is hurting."
+  'Along with a persistent cough, weakness in my arms and legs, and severe back pain, I've been having a lot of trouble. I've experienced issues with vertigo and balance loss, and my neck is hurting.'
 ],
 [
   'test_Cervical spondylosis_188',
@@ -193,17 +193,17 @@
 [
   'test_Cervical spondylosis_189',
   'Cervical spondylosis',
-  "In addition to having excruciating back pain, I've also been coughing up mucus and feeling weak all over. I've been feeling lightheaded and unstable on my feet, and my neck hurts as well."
+  'In addition to having excruciating back pain, I've also been coughing up mucus and feeling weak all over. I've been feeling lightheaded and unstable on my feet, and my neck hurts as well.'
 ],
 [
   'test_Cervical spondylosis_190',
   'Cervical spondylosis',
-  "My muscles have been quite weak, and I've been coughing up phlegm along with significant back discomfort. In addition to feeling weak and disoriented, my neck has been hurting."
+  'My muscles have been quite weak, and I've been coughing up phlegm along with significant back discomfort. In addition to feeling weak and disoriented, my neck has been hurting.'
 ],
 [
   'test_Cervical spondylosis_191',
   'Cervical spondylosis',
-  "Along with a phlegmy cough and muscle weakness, I've been dealing with excruciating back pain. In addition to feeling woozy and shaky on my feet, my neck has been hurting."],
+  'Along with a phlegmy cough and muscle weakness, I've been dealing with excruciating back pain. In addition to feeling woozy and shaky on my feet, my neck has been hurting.'],
 [
   'test_Cervical spondylosis_192',
   'Cervical spondylosis',
@@ -217,7 +217,7 @@
 [
   'test_Cervical spondylosis_194',
   'Cervical spondylosis',
-  "I've had back pain, a cough that won't go away, and limb weakness. I've been experiencing neck pain, instability, and balance concerns."
+  'I've had back pain, a cough that won't go away, and limb weakness. I've been experiencing neck pain, instability, and balance concerns.'
 ],
 [
   'test_Cervical spondylosis_195',
@@ -227,12 +227,12 @@
 [
   'test_Cervical spondylosis_196',
   'Cervical spondylosis',
-  "Back pain, a persistent cough, and numbness in my arms and legs have been bothering me. My neck hurts, and I've been feeling lightheaded and unsteady."
+  'Back pain, a persistent cough, and numbness in my arms and legs have been bothering me. My neck hurts, and I've been feeling lightheaded and unsteady.'
 ],
 [
   'test_Cervical spondylosis_197',
   'Cervical spondylosis',
-  "I've had back pain, a persistent cough, and weakness in my arms and legs. My neck hurts, and I've been feeling off-balance and woozy."
+  'I've had back pain, a persistent cough, and weakness in my arms and legs. My neck hurts, and I've been feeling off-balance and woozy.'
 ],
 [
   'test_Cervical spondylosis_198',
@@ -252,17 +252,17 @@
 [
   'test_Jaundice_201',
   'Jaundice',
-  "I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I've been having stomach pain."
+  'I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I've been having stomach pain.'
 ],
 [
   'test_Jaundice_202',
   'Jaundice',
-  "I've felt really scratchy, nauseated, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additionally, my stomach has been hurting."
+  'I've felt really scratchy, nauseated, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additionally, my stomach has been hurting.'
 ],
 [
   'test_Jaundice_203',
   'Jaundice',
-  "Extreme itchiness, sickness, and exhaustion have all been plaguing me. In addition, I developed a fever and lost weight. My pee is black, and I've developed a yellow rash. Additionally, I've had stomach ache."
+  'Extreme itchiness, sickness, and exhaustion have all been plaguing me. In addition, I developed a fever and lost weight. My pee is black, and I've developed a yellow rash. Additionally, I've had stomach ache.'
 ],
 [
   'test_Jaundice_204',
@@ -272,12 +272,12 @@
 [
   'test_Jaundice_205',
   'Jaundice',
-  "I've been experiencing intense itching and nausea. I have lost weight and am also really exhausted. My skin has become yellow, and I have a severe fever. I have dark urine, and I've been having stomach pain."
+  'I've been experiencing intense itching and nausea. I have lost weight and am also really exhausted. My skin has become yellow, and I have a severe fever. I have dark urine, and I've been having stomach pain.'
 ],
 [
   'test_Jaundice_206',
   'Jaundice',
-  "I've been throwing up and experiencing intense itching. Along with losing weight, I'm also really exhausted. My skin has become yellow, and my fever is really high. I've been having stomach pain and my pee is black."
+  'I've been throwing up and experiencing intense itching. Along with losing weight, I'm also really exhausted. My skin has become yellow, and my fever is really high. I've been having stomach pain and my pee is black.'
 ],
 [
   'test_Jaundice_207',
@@ -287,7 +287,7 @@
 [
   'test_Jaundice_208',
   'Jaundice',
-  "I've been experiencing terrible itching and nausea. I've lost weight and am also really exhausted. My skin has become yellow and I have a severe temperature. I have dark urine and stomach ache."
+  'I've been experiencing terrible itching and nausea. I've lost weight and am also really exhausted. My skin has become yellow and I have a severe temperature. I have dark urine and stomach ache.'
 ],
 [
   'test_Jaundice_209',
@@ -297,27 +297,27 @@
 [
   'test_Jaundice_210',
   'Jaundice',
-  "I've been feeling scratchy and throwing up. I have lost weight and am also really exhausted. My skin has become yellow, and I have a severe fever. I have stomach ache and black urine."
+  'I've been feeling scratchy and throwing up. I have lost weight and am also really exhausted. My skin has become yellow, and I have a severe fever. I have stomach ache and black urine.'
 ],
 [
   'test_Jaundice_211',
   'Jaundice',
-  "I've been itchy and have been throwing up. Along with losing weight, I'm also really exhausted. My skin has turned yellow, and my fever is high. Additionally, I get stomach ache and dark urine."
+  'I've been itchy and have been throwing up. Along with losing weight, I'm also really exhausted. My skin has turned yellow, and my fever is high. Additionally, I get stomach ache and dark urine.'
 ],
 [
   'test_Jaundice_212',
   'Jaundice',
-  "I've had a scratchy stomach and been throwing up. Aside from losing weight, I am also really exhausted. I have a high fever and yellow skin. Besides having stomach ache, my pee is black."
+  'I've had a scratchy stomach and been throwing up. Aside from losing weight, I am also really exhausted. I have a high fever and yellow skin. Besides having stomach ache, my pee is black.'
 ],
 [
   'test_Jaundice_213',
   'Jaundice',
-  "I've been itchy and throwing up. In addition, I have lost weight and feel really exhausted. My skin has become yellow and I have a severe temperature. I have abdominal ache and black urine."
+  'I've been itchy and throwing up. In addition, I have lost weight and feel really exhausted. My skin has become yellow and I have a severe temperature. I have abdominal ache and black urine.'
 ],
 [
   'test_Jaundice_214',
   'Jaundice',
-  "I've been exhausted and experiencing nausea and itching. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I've been having stomach pain."
+  'I've been exhausted and experiencing nausea and itching. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I've been having stomach pain.'
 ],
 [
   'test_Jaundice_215',
@@ -327,17 +327,17 @@
 [
   'test_Jaundice_216',
   'Jaundice',
-  "I've been feeling scratchy, sick, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additional stomach pain that I've been having"
+  'I've been feeling scratchy, sick, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additional stomach pain that I've been having'
 ],
 [
   'test_Jaundice_217',
   'Jaundice',
-  "The itch, the nausea, and the weariness have been bothering me. In addition, I developed a fever and lost weight. My pee is black, and I've developed a yellow rash. Additionally, I've had stomach ache."
+  'The itch, the nausea, and the weariness have been bothering me. In addition, I developed a fever and lost weight. My pee is black, and I've developed a yellow rash. Additionally, I've had stomach ache.'
 ],
 [
   'test_Jaundice_218',
   'Jaundice',
-  "I've had nausea, vomiting, and exhaustion. Additionally, I've lost weight and have a temperature. My urine is black and my skin has turned yellow. I've also been having stomach pain."
+  'I've had nausea, vomiting, and exhaustion. Additionally, I've lost weight and have a temperature. My urine is black and my skin has turned yellow. I've also been having stomach pain.'
 ],
 [
   'test_Jaundice_219',
@@ -347,27 +347,27 @@
 [
   'test_Jaundice_220',
   'Jaundice',
-  "I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I have been experiencing stomach pain."
+  'I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I have been experiencing stomach pain.'
 ],
 [
   'test_Jaundice_221',
   'Jaundice',
-  "I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I have been experiencing stomach pain."
+  'I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I have been experiencing stomach pain.'
 ],
 [
   'test_Jaundice_222',
   'Jaundice',
-  "I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I have been experiencing stomach pain."
+  'I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I have been experiencing stomach pain.'
 ],
 [
   'test_Jaundice_223',
   'Jaundice',
-  "I've been constantly feeling scratchy, sick, and tired out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Furthermore, I have been experiencing stomach pain."
+  'I've been constantly feeling scratchy, sick, and tired out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Furthermore, I have been experiencing stomach pain.'
 ],
 [
   'test_Jaundice_224',
   'Jaundice',
-  "I've felt really scratchy, nauseated, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. I've also been experiencing stomach pain."
+  'I've felt really scratchy, nauseated, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. I've also been experiencing stomach pain.'
 ],
 [
   'test_Jaundice_225',
@@ -377,22 +377,22 @@
 [
   'test_Jaundice_226',
   'Jaundice',
-  "I've been feeling really scratchy, dizzy, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I get stomach pain."
+  'I've been feeling really scratchy, dizzy, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I get stomach pain.'
 ],
 [
   'test_Jaundice_227',
   'Jaundice',
-  "I've been experiencing intense itchiness, nausea, and exhaustion. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additionally, my stomach hurts."
+  'I've been experiencing intense itchiness, nausea, and exhaustion. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additionally, my stomach hurts.'
 ],
 [
   'test_Jaundice_228',
   'Jaundice',
-  "Extreme itchiness, nausea, and exhaustion have been bothering me. In addition, I developed a fever and lost weight. My pee is black, and I've developed a yellow rash. The ache in my stomach is also present."
+  'Extreme itchiness, nausea, and exhaustion have been bothering me. In addition, I developed a fever and lost weight. My pee is black, and I've developed a yellow rash. The ache in my stomach is also present.'
 ],
 [
   'test_Jaundice_229',
   'Jaundice',
-  "Extreme itchiness, nausea, and fatigue have been troubling me. In moreover, I experienced a fever and lost weight. My pee is black, and I've developed a yellow rash. The ache in my stomach is also present."
+  'Extreme itchiness, nausea, and fatigue have been troubling me. In moreover, I experienced a fever and lost weight. My pee is black, and I've developed a yellow rash. The ache in my stomach is also present.'
 ],
 [
   'test_Jaundice_230',
@@ -402,22 +402,22 @@
 [
   'test_Jaundice_231',
   'Jaundice',
-  "I've been itchy and have been throwing up. Along with losing weight, I'm also really exhausted. My skin has turned yellow, and my fever is high. My stomach has also been hurting recently."
+  'I've been itchy and have been throwing up. Along with losing weight, I'm also really exhausted. My skin has turned yellow, and my fever is high. My stomach has also been hurting recently.'
 ],
 [
   'test_Jaundice_232',
   'Jaundice',
-  "I've had a scratchy stomach and been throwing up. I have also lost weight and am really exhausted. I have a high fever and yellow skin. As well as you, I have been having stomach pain."
+  'I've had a scratchy stomach and been throwing up. I have also lost weight and am really exhausted. I have a high fever and yellow skin. As well as you, I have been having stomach pain.'
 ],
 [
   'test_Jaundice_233',
   'Jaundice',
-  "I've been itchy and throwing up. I've lost weight and am also really exhausted. My skin has become yellow and I have a severe temperature. My stomach has also been hurting."
+  'I've been itchy and throwing up. I've lost weight and am also really exhausted. My skin has become yellow and I have a severe temperature. My stomach has also been hurting.'
 ],
 [
   'test_Jaundice_234',
   'Jaundice',
-  "I've been exhausted and experiencing nausea and itching. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I've been having stomach pain."
+  'I've been exhausted and experiencing nausea and itching. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I've been having stomach pain.'
 ],
 [
   'test_Jaundice_235',
@@ -427,12 +427,12 @@
 [
   'test_Jaundice_236',
   'Jaundice',
-  "I've been feeling scratchy, sick, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additional stomach pain that I've been having"
+  'I've been feeling scratchy, sick, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additional stomach pain that I've been having'
 ],
 [
   'test_Jaundice_237',
   'Jaundice',
-  "The itch, the nausea, and the weariness have been bothering me. In addition, I developed a fever and lost weight. My pee is black, and I've developed a yellow rash. Additionally, I've had stomach ache."
+  'The itch, the nausea, and the weariness have been bothering me. In addition, I developed a fever and lost weight. My pee is black, and I've developed a yellow rash. Additionally, I've had stomach ache.'
 ],
 [
   'test_Jaundice_238',
@@ -442,12 +442,12 @@
 [
   'test_Jaundice_239',
   'Jaundice',
-  "I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I have been experiencing stomach pain."
+  'I've been feeling extremely scratchy, sick, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I have been experiencing stomach pain.'
 ],
 [
   'test_Jaundice_240',
   'Jaundice',
-  "I've felt really scratchy, nauseated, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. I've also been experiencing stomach pain."
+  'I've felt really scratchy, nauseated, and worn out. I also had a high fever and lost weight. Both my skin and my urine have become yellow. I've also been experiencing stomach pain.'
 ],
 [
   'test_Jaundice_241',
@@ -457,12 +457,12 @@
 [
   'test_Jaundice_242',
   'Jaundice',
-  "I've been feeling really scratchy, dizzy, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I get stomach pain."
+  'I've been feeling really scratchy, dizzy, and worn out. In addition, I've lost weight and have a temperature. My urine is dark, and my skin has turned yellow. Additionally, I get stomach pain.'
 ],
 [
   'test_Jaundice_243',
   'Jaundice',
-  "I've been experiencing intense itchiness, nausea, and exhaustion. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additionally, my stomach hurts."
+  'I've been experiencing intense itchiness, nausea, and exhaustion. I also had a high fever and lost weight. Both my skin and my urine have become yellow. Additionally, my stomach hurts.'
 ],
 [
   'test_Jaundice_244',
@@ -472,7 +472,7 @@
 [
   'test_Jaundice_245',
   'Jaundice',
-  "I've been losing weight and experiencing nausea, itching, and exhaustion. My skin has become yellow, and I have a severe fever. I have dark urine, and I've been having stomach pain."
+  'I've been losing weight and experiencing nausea, itching, and exhaustion. My skin has become yellow, and I have a severe fever. I have dark urine, and I've been having stomach pain.'
 ],
 [
   'test_Jaundice_246',
@@ -482,7 +482,7 @@
 [
   'test_Jaundice_247',
   'Jaundice',
-  "I've been losing weight and experiencing severe itching, nausea, and exhaustion. My skin has become yellow, and I have a severe fever. I have dark urine, and I've been having stomach pain."
+  'I've been losing weight and experiencing severe itching, nausea, and exhaustion. My skin has become yellow, and I have a severe fever. I have dark urine, and I've been having stomach pain.'
 ],
 [
   'test_Jaundice_248',
@@ -492,67 +492,67 @@
 [
   'test_Jaundice_249',
   'Jaundice',
-  "I've been losing weight, feeling really fatigued, and throwing up a lot. My skin has become yellow, and I have a severe fever. I have dark urine, and I've been having stomach pain."
+  'I've been losing weight, feeling really fatigued, and throwing up a lot. My skin has become yellow, and I have a severe fever. I have dark urine, and I've been having stomach pain.'
 ],
 [
   'test_Malaria_250',
   'Malaria',
-  "I've been experiencing severe itching, chills, vomiting, and a high fever. I'm also sweating a lot and have a headache. I feel nauseous and my muscles are really sore"     
+  'I've been experiencing severe itching, chills, vomiting, and a high fever. I'm also sweating a lot and have a headache. I feel nauseous and my muscles are really sore'     
 ],
 [
   'test_Malaria_251',
   'Malaria',
-  "I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. I'm queasy, and my muscles hurt a lot."
+  'I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. I'm queasy, and my muscles hurt a lot.'
 ],
 [
   'test_Malaria_252',
   'Malaria',
-  "I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. I'm queasy, and my muscles hurt a lot."
+  'I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. I'm queasy, and my muscles hurt a lot.'
 ],
 [
   'test_Malaria_253',
   'Malaria',
-  "Strong itchiness, chills, nausea, and a high temperature have been plaguing me. Besides having a headache, I'm also perspiring a lot. My muscles are quite sore, and I feel sick."
+  'Strong itchiness, chills, nausea, and a high temperature have been plaguing me. Besides having a headache, I'm also perspiring a lot. My muscles are quite sore, and I feel sick.'
 ],
 [
   'test_Malaria_254',
   'Malaria',
-  "Along with my intense scratching, chills, nausea, and high fever, I've also been feeling really unwell. Along with my headache and excessive sweating, My muscles hurt a lot, and I feel queasy."
+  'Along with my intense scratching, chills, nausea, and high fever, I've also been feeling really unwell. Along with my headache and excessive sweating, My muscles hurt a lot, and I feel queasy.'
 ],
 [
   'test_Malaria_255',
   'Malaria',
-  "I've had a high fever, chills, and intense itching. In addition, I have a headache and am perspiring a lot. My muscles hurt a lot, and I feel sick."
+  'I've had a high fever, chills, and intense itching. In addition, I have a headache and am perspiring a lot. My muscles hurt a lot, and I feel sick.'
 ],
 [
   'test_Malaria_256',
   'Malaria',
-  "I've had intense itching all over my body, accompanied by chills and vomiting. My fever is really high and I've been sweating excessively. I also have a headache and feel nauseous. My muscles are really painful."
+  'I've had intense itching all over my body, accompanied by chills and vomiting. My fever is really high and I've been sweating excessively. I also have a headache and feel nauseous. My muscles are really painful.'
 ],
 [
   'test_Malaria_257',
   'Malaria',
-  "I've been experiencing severe body itchiness, chills, and vomiting. I have a really high fever, and I've been perspiring a lot. I also feel queasy and have a headache. My muscles are in excruciating discomfort."
+  'I've been experiencing severe body itchiness, chills, and vomiting. I have a really high fever, and I've been perspiring a lot. I also feel queasy and have a headache. My muscles are in excruciating discomfort.'
 ],
 [
   'test_Malaria_258',
   'Malaria',
-  "Along with severe body itchiness, chills, and nausea, I've been experiencing. I've been severely perspiring and have a very high fever. I'm feeling queasy and also have a headache. Really hurting muscles are me."
+  'Along with severe body itchiness, chills, and nausea, I've been experiencing. I've been severely perspiring and have a very high fever. I'm feeling queasy and also have a headache. Really hurting muscles are me.'
 ],
 [
   'test_Malaria_259',
   'Malaria',
-  "I've been experiencing severe body itchiness, chills, and vomiting. I have a really high fever, and I've been perspiring a lot. I also feel queasy and have a headache. My muscles are in excruciating discomfort."
+  'I've been experiencing severe body itchiness, chills, and vomiting. I have a really high fever, and I've been perspiring a lot. I also feel queasy and have a headache. My muscles are in excruciating discomfort.'
 ],
 [
   'test_Malaria_260',
   'Malaria',
-  "I've been experiencing severe body itchiness, along with chills and nausea. I've been perspiring a lot and have an extremely high fever. I feel sick to my stomach and have a headache. My muscles are hurting a lot."
+  'I've been experiencing severe body itchiness, along with chills and nausea. I've been perspiring a lot and have an extremely high fever. I feel sick to my stomach and have a headache. My muscles are hurting a lot.'
 ],
 [
   'test_Malaria_261',
   'Malaria',
-  "I'm suffering from intense itching, chills, vomiting, and a high fever. I've also been sweating a lot and have a headache. Nausea and muscle pain have also been bothering me."
+  'I'm suffering from intense itching, chills, vomiting, and a high fever. I've also been sweating a lot and have a headache. Nausea and muscle pain have also been bothering me.'
 ],
 [
   'test_Malaria_262',
@@ -562,17 +562,17 @@
 [
   'test_Malaria_263',
   'Malaria',
-  "I have a high temperature, vomiting, chills, and severe itching. In addition, I've been perspiring a lot and have a headache. I've also been bothered by nausea and muscle ache."
+  'I have a high temperature, vomiting, chills, and severe itching. In addition, I've been perspiring a lot and have a headache. I've also been bothered by nausea and muscle ache.'
 ],
 [
   'test_Malaria_264',
   'Malaria',
-  "Strong itchiness, chills, nausea, and a high fever are all part of my current condition. Besides having a headache, I've been perspiring a lot. I've been bothered by nausea as well as muscle ache."
+  'Strong itchiness, chills, nausea, and a high fever are all part of my current condition. Besides having a headache, I've been perspiring a lot. I've been bothered by nausea as well as muscle ache.'
 ],
 [
   'test_Malaria_265',
   'Malaria',
-  "I have a high fever, chills, and severe itching. In addition, I have a headache and have been perspiring a lot. I've also been bothered by nausea and muscular ache."       
+  'I have a high fever, chills, and severe itching. In addition, I have a headache and have been perspiring a lot. I've also been bothered by nausea and muscular ache.'       
 ],
 [
   'test_Malaria_266',
@@ -582,117 +582,117 @@
 [
   'test_Malaria_267',
   'Malaria',
-  "I have a high temperature, vomiting, chills, and severe itching. In addition, I've been perspiring a lot and have a headache. I've also been bothered by nausea and muscle ache."
+  'I have a high temperature, vomiting, chills, and severe itching. In addition, I've been perspiring a lot and have a headache. I've also been bothered by nausea and muscle ache.'
 ],
 [
   'test_Malaria_268',
   'Malaria',
-  "I've been experiencing severe itching, chills, vomiting, and a high fever. I'm also sweating excessively and have a headache. Nausea and muscle pain have also been causing me discomfort."
+  'I've been experiencing severe itching, chills, vomiting, and a high fever. I'm also sweating excessively and have a headache. Nausea and muscle pain have also been causing me discomfort.'
 ],
 [
   'test_Malaria_269',
   'Malaria',
-  "I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. My discomfort has also been brought on by nausea and muscle ache."
+  'I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. My discomfort has also been brought on by nausea and muscle ache.'
 ],
 [
   'test_Malaria_270',
   'Malaria',
-  "Strong itchiness, chills, nausea, and a high temperature have been plaguing me. Along with having a headache, I'm also perspiring a lot. I've also been bothered by nausea and muscle ache."
+  'Strong itchiness, chills, nausea, and a high temperature have been plaguing me. Along with having a headache, I'm also perspiring a lot. I've also been bothered by nausea and muscle ache.'
 ],
 [
   'test_Malaria_271',
   'Malaria',
-  "Along with my intense scratching, chills, nausea, and high fever, I've also been feeling really unwell. I have a headache and am also perspiring a lot. I've been uncomfortable from nausea and muscle ache, too."
+  'Along with my intense scratching, chills, nausea, and high fever, I've also been feeling really unwell. I have a headache and am also perspiring a lot. I've been uncomfortable from nausea and muscle ache, too.'
 ],
 [
   'test_Malaria_272',
   'Malaria',
-  "I've had a high fever, chills, and intense itching. In addition, I have a headache and am perspiring a lot. I've been suffering from nausea as well as muscle ache."        
+  'I've had a high fever, chills, and intense itching. In addition, I have a headache and am perspiring a lot. I've been suffering from nausea as well as muscle ache.'        
 ],
 [
   'test_Malaria_273',
   'Malaria',
-  "I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. My discomfort has also been brought on by nausea and muscle ache."
+  'I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. My discomfort has also been brought on by nausea and muscle ache.'
 ],
 [
   'test_Malaria_274',
   'Malaria',
-  "I've had intense itching, chills, vomiting, and a high fever. I'm also sweating a lot and have a headache. Nausea and muscle pain have been making me feel miserable."      
+  'I've had intense itching, chills, vomiting, and a high fever. I'm also sweating a lot and have a headache. Nausea and muscle pain have been making me feel miserable.'      
 ],
 [
   'test_Malaria_275',
   'Malaria',
-  "I've been experiencing a lot of scratching, chills, vomiting, and a fever. I also have a headache and am perspiring a lot. I've been terrible with nausea and soreness in my muscles."
+  'I've been experiencing a lot of scratching, chills, vomiting, and a fever. I also have a headache and am perspiring a lot. I've been terrible with nausea and soreness in my muscles.'
 ],
 [
   'test_Malaria_276',
   'Malaria',
-  "I've experienced severe itching, chills, nausea, and a high fever. Besides having a headache, I'm also perspiring a lot. I've been terrible with nausea and muscle ache."   
+  'I've experienced severe itching, chills, nausea, and a high fever. Besides having a headache, I'm also perspiring a lot. I've been terrible with nausea and muscle ache.'   
 ],
 [
   'test_Malaria_277',
   'Malaria',
-  "I have a high fever, chills, and severe itching. Along with my headache and excessive sweating, I've been terrible with nausea and muscle ache."
+  'I have a high fever, chills, and severe itching. Along with my headache and excessive sweating, I've been terrible with nausea and muscle ache.'
 ],
 [
   'test_Malaria_278',
   'Malaria',
-  "I have a high fever, chills, and severe itching. In addition, I have a headache and am perspiring a lot. I've been feeling awful with nausea and muscle ache."
+  'I have a high fever, chills, and severe itching. In addition, I have a headache and am perspiring a lot. I've been feeling awful with nausea and muscle ache.'
 ],
 [
   'test_Malaria_279',
   'Malaria',
-  "I've been experiencing severe itching, chills, vomiting, and a high fever. I'm also sweating a lot and have a headache. Nausea and muscle pain have been causing me a lot of discomfort."
+  'I've been experiencing severe itching, chills, vomiting, and a high fever. I'm also sweating a lot and have a headache. Nausea and muscle pain have been causing me a lot of discomfort.'
 ],
 [
   'test_Malaria_280',
   'Malaria',
-  "I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. I've been really uncomfortable lately from nausea and muscle ache."
+  'I've had a high temperature, vomiting, chills, and intense itching. I also have a headache and am perspiring a lot. I've been really uncomfortable lately from nausea and muscle ache.'
 ],
 [
   'test_Malaria_281',
   'Malaria',
-  "Strong itchiness, chills, nausea, and a high temperature have been plaguing me. Besides having a headache, I'm also perspiring a lot. I've been suffering from severe muscle pain and nausea."
+  'Strong itchiness, chills, nausea, and a high temperature have been plaguing me. Besides having a headache, I'm also perspiring a lot. I've been suffering from severe muscle pain and nausea.'
 ],
 [
   'test_Malaria_282',
   'Malaria',
-  "Along with my intense scratching, chills, nausea, and high fever, I've also been feeling really unwell. Along with my headache and excessive sweating, I've been suffering from severe muscle pain and nausea."
+  'Along with my intense scratching, chills, nausea, and high fever, I've also been feeling really unwell. Along with my headache and excessive sweating, I've been suffering from severe muscle pain and nausea.'
 ],
 [
   'test_Malaria_283',
   'Malaria',
-  "I've had a high fever, chills, and intense itching. In addition, I have a headache and am perspiring a lot. I've been in a lot of agony from muscle ache and nausea."       
+  'I've had a high fever, chills, and intense itching. In addition, I have a headache and am perspiring a lot. I've been in a lot of agony from muscle ache and nausea.'       
 ],
 [
   'test_Malaria_284',
   'Malaria',
-  "I've had intense itching, chills, vomiting, and a high fever. I'm also sweating excessively and have a headache. Nausea and muscle pain have also been bothering me."       
+  'I've had intense itching, chills, vomiting, and a high fever. I'm also sweating excessively and have a headache. Nausea and muscle pain have also been bothering me.'       
 ],
 [
   'test_Malaria_285',
   'Malaria',
-  "I've been experiencing a lot of scratching, chills, vomiting, and a fever. I also have a headache and am perspiring a lot. Additionally hurting me have been nausea and muscle soreness."
+  'I've been experiencing a lot of scratching, chills, vomiting, and a fever. I also have a headache and am perspiring a lot. Additionally hurting me have been nausea and muscle soreness.'
 ],
 [
   'test_Malaria_286',
   'Malaria',
-  "I've experienced severe itching, chills, nausea, and a high fever. Along with having a headache, I'm also perspiring a lot. I've also been bothered by nausea and muscle ache."
+  'I've experienced severe itching, chills, nausea, and a high fever. Along with having a headache, I'm also perspiring a lot. I've also been bothered by nausea and muscle ache.'
 ],
 [
   'test_Malaria_287',
   'Malaria',
-  "I have a high fever, chills, and severe itching. I have a headache and am also perspiring a lot. I've been bothered by nausea as well as muscle ache."
+  'I have a high fever, chills, and severe itching. I have a headache and am also perspiring a lot. I've been bothered by nausea as well as muscle ache.'
 ],
 [
   'test_Malaria_288',
   'Malaria',
-  "I've been experiencing severe itching, chills, vomiting, and a high fever. In addition, I have a headache and am perspiring a lot. I've also been bothered by nausea and muscular ache."
+  'I've been experiencing severe itching, chills, vomiting, and a high fever. In addition, I have a headache and am perspiring a lot. I've also been bothered by nausea and muscular ache.'
 ],
 [
   'test_Malaria_289',
   'Malaria',
-  "I'm suffering from severe itching, chills, vomiting, and a high fever. I've also been sweating a lot and have a headache. Nausea and muscle pain have also been causing me discomfort."
+  'I'm suffering from severe itching, chills, vomiting, and a high fever. I've also been sweating a lot and have a headache. Nausea and muscle pain have also been causing me discomfort.'
 ],
 [
   'test_Malaria_290',
@@ -702,17 +702,17 @@
 [
   'test_Malaria_291',
   'Malaria',
-  "I have a high fever, severe itching, chills, and vomiting. In addition, I've been perspiring a lot and have a headache. I've also been bothered by nausea and muscle ache." 
+  'I have a high fever, severe itching, chills, and vomiting. In addition, I've been perspiring a lot and have a headache. I've also been bothered by nausea and muscle ache.' 
 ],
 [
   'test_Malaria_292',
   'Malaria',
-  "Strong itchiness, chills, nausea, and a high fever are all part of my current condition. Besides having a headache, I've been perspiring a lot. I've been uncomfortable from nausea and muscle ache, too."
+  'Strong itchiness, chills, nausea, and a high fever are all part of my current condition. Besides having a headache, I've been perspiring a lot. I've been uncomfortable from nausea and muscle ache, too.'
 ],
 [
   'test_Malaria_293',
   'Malaria',
-  "Strong itchiness, chills, nausea, and a high fever are all part of my current condition. In addition, I have a headache and have been perspiring a lot. I've been suffering from nausea as well as muscle ache."
+  'Strong itchiness, chills, nausea, and a high fever are all part of my current condition. In addition, I have a headache and have been perspiring a lot. I've been suffering from nausea as well as muscle ache.'
 ],
 [
   'test_Malaria_294',
@@ -722,26 +722,26 @@
 [
   'test_Malaria_295',
   'Malaria',
-  "I've been experiencing intense itching, chills, vomiting, and a high fever. I'm also sweating a lot and have a headache. Nausea and muscle pain have been making me feel miserable."
+  'I've been experiencing intense itching, chills, vomiting, and a high fever. I'm also sweating a lot and have a headache. Nausea and muscle pain have been making me feel miserable.'
 ],
 [
   'test_Malaria_296',
   'Malaria',
-  "Intense scratching, chills, nausea, and a high temperature have been plaguing me. I also have a headache and am perspiring a lot. I've been terrible with nausea and soreness in my muscles."
+  'Intense scratching, chills, nausea, and a high temperature have been plaguing me. I also have a headache and am perspiring a lot. I've been terrible with nausea and soreness in my muscles.'
 ],
 [
   'test_Malaria_297',
   'Malaria',
-  "Along with a high fever, I've had chills, vomiting, and severe itching. Besides having a headache, I'm also perspiring a lot. I've been terrible with nausea and muscle ache."
+  'Along with a high fever, I've had chills, vomiting, and severe itching. Besides having a headache, I'm also perspiring a lot. I've been terrible with nausea and muscle ache.'
 ],
 [
   'test_Malaria_298',
   'Malaria',
-  "Along with a high fever, I've had chills, vomiting, and severe itching. Along with my headache and excessive sweating, I've been feeling awful with nausea and muscle ache."],
+  'Along with a high fever, I've had chills, vomiting, and severe itching. Along with my headache and excessive sweating, I've been feeling awful with nausea and muscle ache.'],
 [
   'test_Malaria_299',
   'Malaria',
-  "I've had severe itching, chills, vomiting, and a high fever. I'm also sweating excessively and have a headache. Nausea and muscle pain have also been causing me a lot of discomfort."
+  'I've had severe itching, chills, vomiting, and a high fever. I'm also sweating excessively and have a headache. Nausea and muscle pain have also been causing me a lot of discomfort.'
 ],
 [
   'test_urinary tract infection_0',
@@ -845,7 +845,7 @@
 [
   'test_urinary tract infection_20',
   'urinary tract infection',
-  "I've been experiencing frequent, intense, abrupt cravings to urinate. Sometimes I get blood in my pee, and it smells awful. What should I do if I believe I have an infection?"
+  'I've been experiencing frequent, intense, abrupt cravings to urinate. Sometimes I get blood in my pee, and it smells awful. What should I do if I believe I have an infection?'
 ],
 [
   'test_urinary tract infection_21',
@@ -855,17 +855,17 @@
 [
   'test_urinary tract infection_22',
   'urinary tract infection',
-  "I have lower abdominal ache and a bursting sensation when I urinate. Since I began to experience these additional symptoms, I have also been experiencing low body temperatures. I've been weak as a result of this."
+  'I have lower abdominal ache and a bursting sensation when I urinate. Since I began to experience these additional symptoms, I have also been experiencing low body temperatures. I've been weak as a result of this.'
 ],
 [
   'test_urinary tract infection_23',
   'urinary tract infection',
-  "I have a mild temperature and blood in my pee. My head hurts almost constantly, and I frequently experience severe, involuntary desires to urinate. Additionally, I've been experiencing lower back ache"
+  'I have a mild temperature and blood in my pee. My head hurts almost constantly, and I frequently experience severe, involuntary desires to urinate. Additionally, I've been experiencing lower back ache'
 ],
 [
   'test_urinary tract infection_24',
   'urinary tract infection',
-  "Since a few days ago, I've been experiencing low temperatures and bloody urination. My head is in excruciating pain, and my urine smells awful. I can hardly control when I urinate, and the impulses come on suddenly."
+  'Since a few days ago, I've been experiencing low temperatures and bloody urination. My head is in excruciating pain, and my urine smells awful. I can hardly control when I urinate, and the impulses come on suddenly.'
 ],
 [
   'test_urinary tract infection_25',
@@ -875,17 +875,17 @@
 [
   'test_urinary tract infection_26',
   'urinary tract infection',
-  "I have to use the restroom frequently to relieve myself, but I can't seem to get my bladder empty. I occasionally get severe, uncontrolled desires to urinate, as well as black or crimson urine."
+  'I have to use the restroom frequently to relieve myself, but I can't seem to get my bladder empty. I occasionally get severe, uncontrolled desires to urinate, as well as black or crimson urine.'
 ],
 [
   'test_urinary tract infection_27',
   'urinary tract infection',
-  "I've been experiencing really low moods and very bad urine odour. I can't seem to keep my urine back, and the area near my kidneys hurts a lot. I frequently experience these irrational cravings."
+  'I've been experiencing really low moods and very bad urine odour. I can't seem to keep my urine back, and the area near my kidneys hurts a lot. I frequently experience these irrational cravings.'
 ],
 [
   'test_urinary tract infection_28',
   'urinary tract infection',
-  "I have to use the restroom frequently, yet only a few drops of pee are usually produced. My stomach aches a lot, and I can't seem to control the desire to urinate."        
+  'I have to use the restroom frequently, yet only a few drops of pee are usually produced. My stomach aches a lot, and I can't seem to control the desire to urinate.'        
 ],
 [
   'test_urinary tract infection_29',
@@ -895,17 +895,17 @@
 [
   'test_urinary tract infection_30',
   'urinary tract infection',
-  "Blood has been found in my urination. I sometimes have nausea when urinating. I regularly feel like I'm almost feverish."
+  'Blood has been found in my urination. I sometimes have nausea when urinating. I regularly feel like I'm almost feverish.'
 ],
 [
   'test_urinary tract infection_31',
   'urinary tract infection',
-  "My pee smells strongly and is cloudy in appearance. I've had high temperatures and a regular urge to urinate at night since these symptoms first materialised."
+  'My pee smells strongly and is cloudy in appearance. I've had high temperatures and a regular urge to urinate at night since these symptoms first materialised.'
 ],
 [
   'test_urinary tract infection_32',
   'urinary tract infection',
-  "I've been having frequent, strong, sudden urges to urinate. I occasionally urinate with blood in it, and the stench is horrible. What ought I to do if I think I'm infected?"
+  'I've been having frequent, strong, sudden urges to urinate. I occasionally urinate with blood in it, and the stench is horrible. What ought I to do if I think I'm infected?'
 ],
 [
   'test_urinary tract infection_33',
@@ -915,17 +915,17 @@
 [
   'test_urinary tract infection_34',
   'urinary tract infection',
-  "My lower abdomen hurts, and when I urinate, it feels like it's exploding. I've been having low body temps ever since I started having these new symptoms. Because of this, I've been weak."
+  'My lower abdomen hurts, and when I urinate, it feels like it's exploding. I've been having low body temps ever since I started having these new symptoms. Because of this, I've been weak.'
 ],
 [
   'test_urinary tract infection_35',
   'urinary tract infection',
-  "Blood is in my pee, and I have a low body temperature. I have practically continual headaches and often strong, uncontrollable need to urinate. In addition, I've started having lower back pain."
+  'Blood is in my pee, and I have a low body temperature. I have practically continual headaches and often strong, uncontrollable need to urinate. In addition, I've started having lower back pain.'
 ],
 [
   'test_urinary tract infection_36',
   'urinary tract infection',
-  "I've had low temps and bloody urine for the past four days. My pee smells terrible, and my head hurts like hell. I scarcely have any control over when I urinate, and the urges strike without warning."
+  'I've had low temps and bloody urine for the past four days. My pee smells terrible, and my head hurts like hell. I scarcely have any control over when I urinate, and the urges strike without warning.'
 ],
 [
   'test_urinary tract infection_37',
@@ -935,12 +935,12 @@
 [
   'test_urinary tract infection_38',
   'urinary tract infection',
-  "I need to relieve myself regularly, but I can't seem to get my bladder to empty. On sometimes, I get intense, uncontrollable urges to urinate, along with dark or red urine."
+  'I need to relieve myself regularly, but I can't seem to get my bladder to empty. On sometimes, I get intense, uncontrollable urges to urinate, along with dark or red urine.'
 ],
 [
   'test_urinary tract infection_39',
   'urinary tract infection',
-  "My spirits have been incredibly low, and my pee smells awful. My kidney region hurts a lot, and I can't seem to hold my urine in. I get these unreasonable urges all the time."
+  'My spirits have been incredibly low, and my pee smells awful. My kidney region hurts a lot, and I can't seem to hold my urine in. I get these unreasonable urges all the time.'
 ],
 [
   'test_urinary tract infection_40',
@@ -950,7 +950,7 @@
 [
   'test_urinary tract infection_41',
   'urinary tract infection',
-  "My urine often has a weird odour, is crimson or black in colour, and both. My body's temperature has been fluctuating often, which typically keeps me up at night."
+  'My urine often has a weird odour, is crimson or black in colour, and both. My body's temperature has been fluctuating often, which typically keeps me up at night.'
 ],
 [
   'test_urinary tract infection_42',
@@ -960,7 +960,7 @@
 [
   'test_urinary tract infection_43',
   'urinary tract infection',
-  "My pee has a strong odour and a hazy look. Since these symptoms started, I've had high temperatures and frequent nighttime urges to urinate."
+  'My pee has a strong odour and a hazy look. Since these symptoms started, I've had high temperatures and frequent nighttime urges to urinate.'
 ],
 [
   'test_urinary tract infection_44',
@@ -970,12 +970,12 @@
 [
   'test_urinary tract infection_45',
   'urinary tract infection',
-  "My lower abdomen aches, and it feels like it may explode when I urinate. Since I began experiencing these new symptoms, my body temperature has been consistently low. That's why I've been weak."
+  'My lower abdomen aches, and it feels like it may explode when I urinate. Since I began experiencing these new symptoms, my body temperature has been consistently low. That's why I've been weak.'
 ],
 [
   'test_urinary tract infection_46',
   'urinary tract infection',
-  "In the last four days, I've experienced low temperatures and blood in my pee. My head hurts so much and my urine smells awful. The desires to urinate seldom come on cue, and I hardly ever have any control over when they do."
+  'In the last four days, I've experienced low temperatures and blood in my pee. My head hurts so much and my urine smells awful. The desires to urinate seldom come on cue, and I hardly ever have any control over when they do.'
 ],
 [
   'test_urinary tract infection_47',
@@ -985,12 +985,12 @@
 [
   'test_urinary tract infection_48',
   'urinary tract infection',
-  "My pee smells strongly and seems cloudy. I've had fevers and frequent overnight urination needs ever since these symptoms began."
+  'My pee smells strongly and seems cloudy. I've had fevers and frequent overnight urination needs ever since these symptoms began.'
 ],
 [
   'test_urinary tract infection_49',
   'urinary tract infection',
-  "I've had low temps and blood in my urine for the past three days. My pee smells terrible, and my head hurts so much. Urinary urges seldom occur on cue, and I almost never have any control over when they do."
+  'I've had low temps and blood in my urine for the past three days. My pee smells terrible, and my head hurts so much. Urinary urges seldom occur on cue, and I almost never have any control over when they do.'
 ],
 [
   'test_allergy_50',
@@ -1050,7 +1050,7 @@
 [
   'test_allergy_61',
   'allergy',
-  "I often sneeze and have a sore throat. My lips and the area around my eyes occasionally swell. Once I start sneezing, I just can't stop."
+  'I often sneeze and have a sore throat. My lips and the area around my eyes occasionally swell. Once I start sneezing, I just can't stop.'
 ],
 [
   'test_allergy_62',
@@ -1060,7 +1060,7 @@
 [
   'test_allergy_63',
   'allergy',
-  "I have a plugged nose and nasal congestion. I occasionally have stiffness and chest discomfort at night. I've also lost my ability to taste and smell."
+  'I have a plugged nose and nasal congestion. I occasionally have stiffness and chest discomfort at night. I've also lost my ability to taste and smell.'
 ],
 [
   'test_allergy_64',
@@ -1075,12 +1075,12 @@
 [
   'test_allergy_66',
   'allergy',
-  "I've been losing my appetite, and I also have trouble swallowing. My nose has been running, and I have a sore throat."
+  'I've been losing my appetite, and I also have trouble swallowing. My nose has been running, and I have a sore throat.'
 ],
 [
   'test_allergy_67',
   'allergy',
-  "I'm always worn out and experiencing a tingle in my throat. I've also started to have dry skin. My eyes occasionally swell up"
+  'I'm always worn out and experiencing a tingle in my throat. I've also started to have dry skin. My eyes occasionally swell up'
 ],
 [
   'test_allergy_68',
@@ -1100,7 +1100,7 @@
 [
   'test_allergy_71',
   'allergy',
-  "I have a sore throat and frequently sneeze. Sometimes the skin around my eyes and my lips swells. I just can't stop sneezing once I get going."
+  'I have a sore throat and frequently sneeze. Sometimes the skin around my eyes and my lips swells. I just can't stop sneezing once I get going.'
 ],
 [
   'test_allergy_72',
@@ -1110,7 +1110,7 @@
 [
   'test_allergy_73',
   'allergy',
-  "I have nasal congestion and a blocked nose. On occasion, during the night, I have stiffness and chest pain. Additionally, I've lost my senses of taste and smell."
+  'I have nasal congestion and a blocked nose. On occasion, during the night, I have stiffness and chest pain. Additionally, I've lost my senses of taste and smell.'
 ],
 [
   'test_allergy_74',
@@ -1125,7 +1125,7 @@
 [
   'test_allergy_76',
   'allergy',
-  "Along with losing my appetite, I've been having swallowing issues. I have a sore throat, and my nose has been running."
+  'Along with losing my appetite, I've been having swallowing issues. I have a sore throat, and my nose has been running.'
 ],
 [
   'test_allergy_77',
@@ -1135,7 +1135,7 @@
 [
   'test_allergy_78',
   'allergy',
-  "I'm dizzy, nauseated, and shaky. I'm having trouble breathing since my throat is swollen. On occasion, throughout the night, my chest hurts and I feel sick."
+  'I'm dizzy, nauseated, and shaky. I'm having trouble breathing since my throat is swollen. On occasion, throughout the night, my chest hurts and I feel sick.'
 ],
 [
   'test_allergy_79',
@@ -1150,7 +1150,7 @@
 [
   'test_allergy_81',
   'allergy',
-  "I sneeze a lot and have a sore throat. My lips and the skin surrounding my eyes will occasionally swell. Once I start, I just can't stop sneezing."
+  'I sneeze a lot and have a sore throat. My lips and the skin surrounding my eyes will occasionally swell. Once I start, I just can't stop sneezing.'
 ],
 [
   'test_allergy_82',
@@ -1160,12 +1160,12 @@
 [
   'test_allergy_83',
   'allergy',
-  "I have a plugged nose and nasal congestion. I occasionally have stiffness and chest discomfort during the night. I've also lost my ability to smell and taste."
+  'I have a plugged nose and nasal congestion. I occasionally have stiffness and chest discomfort during the night. I've also lost my ability to smell and taste.'
 ],
 [
   'test_allergy_84',
   'allergy',
-  "I get wheezing and breathing difficulties, which are asthma symptoms. I frequently have headaches and fever. I'm continuously exhausted."
+  'I get wheezing and breathing difficulties, which are asthma symptoms. I frequently have headaches and fever. I'm continuously exhausted.'
 ],
 [
   'test_allergy_85',
@@ -1175,7 +1175,7 @@
 [
   'test_allergy_86',
   'allergy',
-  "I've been losing my appetite and having trouble swallowing. My nose has been running, and I have a sore throat."
+  'I've been losing my appetite and having trouble swallowing. My nose has been running, and I have a sore throat.'
 ],
 [
   'test_allergy_87',
@@ -1210,12 +1210,12 @@
 [
   'test_allergy_93',
   'allergy',
-  "I have nasal congestion and a blocked nose. On occasion, during the night, I have stiffness and chest pain. I've also lost my senses of taste and smell."
+  'I have nasal congestion and a blocked nose. On occasion, during the night, I have stiffness and chest pain. I've also lost my senses of taste and smell.'
 ],
 [
   'test_allergy_94',
   'allergy',
-  "I get breathing issues and wheezing, which are asthma symptoms. I regularly have fevers and headaches. I'm always worn out."
+  'I get breathing issues and wheezing, which are asthma symptoms. I regularly have fevers and headaches. I'm always worn out.'
 ],
 [
   'test_allergy_95',
@@ -1225,17 +1225,17 @@
 [
   'test_allergy_96',
   'allergy',
-  "My appetite has decreased, and I've been having swallowing issues. I have a sore throat, and my nose has been running."
+  'My appetite has decreased, and I've been having swallowing issues. I have a sore throat, and my nose has been running.'
 ],
 [
   'test_allergy_97',
   'allergy',
-  "My throat always tickles, and I'm worn out. Additionally, my skin has started to feel dry. Ocular inflammation occasionally affects me."
+  'My throat always tickles, and I'm worn out. Additionally, my skin has started to feel dry. Ocular inflammation occasionally affects me.'
 ],
 [
   'test_allergy_98',
   'allergy',
-  "I'm nauseous, ill, and shaky. I have a huge throat, which makes it tough for me to breathe. I occasionally have nighttime chest aches and occasional sickness."
+  'I'm nauseous, ill, and shaky. I have a huge throat, which makes it tough for me to breathe. I occasionally have nighttime chest aches and occasional sickness.'
 ],
 [
   'test_allergy_99',
@@ -1260,7 +1260,7 @@
 [
   'test_gastroesophageal reflux disease_103',
   'gastroesophageal reflux disease',
-  "I have a persistent sour taste in my mouth, even when I haven't eaten anything acidic. I get frequent hiccups and a feeling of lump in my throat."
+  'I have a persistent sour taste in my mouth, even when I haven't eaten anything acidic. I get frequent hiccups and a feeling of lump in my throat.'
 ],
 [
   'test_gastroesophageal reflux disease_104',
@@ -1290,7 +1290,7 @@
 [
   'test_gastroesophageal reflux disease_109',
   'gastroesophageal reflux disease',
-  "I feel uneasiness after eating and usually vomit whatever I've eaten. I always have this pain in my abdomen and have really bad acid reflux"
+  'I feel uneasiness after eating and usually vomit whatever I've eaten. I always have this pain in my abdomen and have really bad acid reflux'
 ],
 [
   'test_gastroesophageal reflux disease_110',
@@ -1310,7 +1310,7 @@
 [
   'test_gastroesophageal reflux disease_113',
   'gastroesophageal reflux disease',
-  "Even when I don't have anything acidic in my stomach, I constantly have a sour taste in my mouth. I frequently have hiccups and a lump in my throat."
+  'Even when I don't have anything acidic in my stomach, I constantly have a sour taste in my mouth. I frequently have hiccups and a lump in my throat.'
 ],
 [
   'test_gastroesophageal reflux disease_114',
@@ -1325,7 +1325,7 @@
 [
   'test_gastroesophageal reflux disease_116',
   'gastroesophageal reflux disease',
-  "I don't feel like eating, and swallowing is challenging. Even after eating little meals, I frequently get this lingering sense of fullness. Typically, I have heartburn, nausea, and tingling in my throat."
+  'I don't feel like eating, and swallowing is challenging. Even after eating little meals, I frequently get this lingering sense of fullness. Typically, I have heartburn, nausea, and tingling in my throat.'
 ],
 [
   'test_gastroesophageal reflux disease_117',
@@ -1340,7 +1340,7 @@
 [
   'test_gastroesophageal reflux disease_119',
   'gastroesophageal reflux disease',
-  "After eating, I get queasy and frequently throw up everything I've eaten. I always get severe abdominal ache and have terrible acid reflux."
+  'After eating, I get queasy and frequently throw up everything I've eaten. I always get severe abdominal ache and have terrible acid reflux.'
 ],
 [
   'test_gastroesophageal reflux disease_120',
@@ -1375,7 +1375,7 @@
 [
   'test_gastroesophageal reflux disease_126',
   'gastroesophageal reflux disease',
-  "I'm not in the mood to eat, and swallowing is difficult. I often have this lingering feeling of fullness even after little meals. My typical symptoms include heartburn, nausea, and throat tingling."
+  'I'm not in the mood to eat, and swallowing is difficult. I often have this lingering feeling of fullness even after little meals. My typical symptoms include heartburn, nausea, and throat tingling.'
 ],
 [
   'test_gastroesophageal reflux disease_127',
@@ -1410,7 +1410,7 @@
 [
   'test_gastroesophageal reflux disease_133',
   'gastroesophageal reflux disease',
-  "Even when I don't have anything acidic in my stomach, I constantly have a sour taste in my mouth. I frequently have a lump in my throat and the hiccups."
+  'Even when I don't have anything acidic in my stomach, I constantly have a sour taste in my mouth. I frequently have a lump in my throat and the hiccups.'
 ],
 [
   'test_gastroesophageal reflux disease_134',
@@ -1425,7 +1425,7 @@
 [
   'test_gastroesophageal reflux disease_136',
   'gastroesophageal reflux disease',
-  "I don't feel like eating, and swallowing is challenging. Even after little meals, I frequently get this lingering sensation of fullness. My normal symptoms include nausea, heartburn, and tingling in my throat."
+  'I don't feel like eating, and swallowing is challenging. Even after little meals, I frequently get this lingering sensation of fullness. My normal symptoms include nausea, heartburn, and tingling in my throat.'
 ],
 [
   'test_gastroesophageal reflux disease_137',
@@ -1435,7 +1435,7 @@
 [
   'test_gastroesophageal reflux disease_138',
   'gastroesophageal reflux disease',
-  "It feels like food or acid is backing up in my throat. My chest discomfort only becomes worse while I'm lying down. After eating, I frequently have heartburn or indigestion and throw up."
+  'It feels like food or acid is backing up in my throat. My chest discomfort only becomes worse while I'm lying down. After eating, I frequently have heartburn or indigestion and throw up.'
 ],
 [
   'test_gastroesophageal reflux disease_139',
@@ -1450,7 +1450,7 @@
 [
   'test_gastroesophageal reflux disease_141',
   'gastroesophageal reflux disease',
-  "I have heartburn and indigestion. I regularly throw up everything I eat, and swallowing is difficult for me since food gets stuck in my throat. I'm experiencing pain in my upper abdomen."
+  'I have heartburn and indigestion. I regularly throw up everything I eat, and swallowing is difficult for me since food gets stuck in my throat. I'm experiencing pain in my upper abdomen.'
 ],
 [
   'test_gastroesophageal reflux disease_142',
@@ -1460,7 +1460,7 @@
 [
   'test_gastroesophageal reflux disease_143',
   'gastroesophageal reflux disease',
-  "I always get a sour taste in my mouth, even when I don't have anything acidic in my stomach. I regularly have the hiccups and a knot in my throat."
+  'I always get a sour taste in my mouth, even when I don't have anything acidic in my stomach. I regularly have the hiccups and a knot in my throat.'
 ],
 [
   'test_gastroesophageal reflux disease_144',
@@ -1470,7 +1470,7 @@
 [
   'test_gastroesophageal reflux disease_145',
   'gastroesophageal reflux disease',
-  "I frequently have indigestion and heartburn, especially after eating spicy or fatty foods. My chest hurts when I lean forward or while I'm lying down. Additionally, my chest hurts a lot."
+  'I frequently have indigestion and heartburn, especially after eating spicy or fatty foods. My chest hurts when I lean forward or while I'm lying down. Additionally, my chest hurts a lot.'
 ],
 [
   'test_gastroesophageal reflux disease_146',
@@ -1480,17 +1480,17 @@
 [
   'test_gastroesophageal reflux disease_147',
   'gastroesophageal reflux disease',
-  "My throat often feels like it's on fire, especially after eating. I occasionally get an aftertaste that is sour or bitter and makes me feel nauseous."
+  'My throat often feels like it's on fire, especially after eating. I occasionally get an aftertaste that is sour or bitter and makes me feel nauseous.'
 ],
 [
   'test_gastroesophageal reflux disease_148',
   'gastroesophageal reflux disease',
-  "Even when I don't have anything acidic in my stomach, I constantly have a sour taste in my mouth. I frequently have a lump in my throat and the hiccups."
+  'Even when I don't have anything acidic in my stomach, I constantly have a sour taste in my mouth. I frequently have a lump in my throat and the hiccups.'
 ],
 [
   'test_gastroesophageal reflux disease_149',
   'gastroesophageal reflux disease',
-  "I'm not in the mood to eat, and swallowing is difficult. I often have this lingering feeling of fullness even after little meals. My typical symptoms include heartburn, nausea, and throat tingling."
+  'I'm not in the mood to eat, and swallowing is difficult. I often have this lingering feeling of fullness even after little meals. My typical symptoms include heartburn, nausea, and throat tingling.'
 ],
 [
   'test_drug reaction_150',
@@ -1555,12 +1555,12 @@
 [
   'test_drug reaction_162',
   'drug reaction',
-  "I suffer migraines and headaches, and I've been having trouble falling asleep. My muscles have been trembling and twitching. I sometimes feel dizzy."
+  'I suffer migraines and headaches, and I've been having trouble falling asleep. My muscles have been trembling and twitching. I sometimes feel dizzy.'
 ],
 [
   'test_drug reaction_163',
   'drug reaction',
-  "I'm feeling really lightheaded and dizzy when I have a temperature. My mind is completely muddled, and my heart is racing. I find it difficult to think clearly, and everything seems quite hazy."
+  'I'm feeling really lightheaded and dizzy when I have a temperature. My mind is completely muddled, and my heart is racing. I find it difficult to think clearly, and everything seems quite hazy.'
 ],
 [
   'test_drug reaction_164',
@@ -1580,22 +1580,22 @@
 [
   'test_drug reaction_167',
   'drug reaction',
-  "My hair's texture has significantly changed, and I'm experiencing hair loss. My scalp is dry and itching, and my dandruff is becoming worse. My skin is also becoming really dry."
+  'My hair's texture has significantly changed, and I'm experiencing hair loss. My scalp is dry and itching, and my dandruff is becoming worse. My skin is also becoming really dry.'
 ],
 [
   'test_drug reaction_168',
   'drug reaction',
-  "My sex desire has decreased, and I'm finding it harder to function sexually. I regularly have brain fog and feel quite dizzy and disoriented."
+  'My sex desire has decreased, and I'm finding it harder to function sexually. I regularly have brain fog and feel quite dizzy and disoriented.'
 ],
 [
   'test_drug reaction_169',
   'drug reaction',
-  "My monthly cycle has changed, and I've had an unexpected vaginal discharge. I frequently experience mood swings and experience occasional agitation."
+  'My monthly cycle has changed, and I've had an unexpected vaginal discharge. I frequently experience mood swings and experience occasional agitation.'
 ],
 [
   'test_drug reaction_170',
   'drug reaction',
-  "I've gained a lot of weight and am now quite fat. My appetite varies, and I have desires for various things."
+  'I've gained a lot of weight and am now quite fat. My appetite varies, and I have desires for various things.'
 ],
 [
   'test_drug reaction_171',
@@ -1620,7 +1620,7 @@
 [
   'test_drug reaction_175',
   'drug reaction',
-  "My rashes occasionally cause my skin to peel off. I'm more susceptible to illnesses as a result. I start to tremble sometimes, and my hands start to shake."
+  'My rashes occasionally cause my skin to peel off. I'm more susceptible to illnesses as a result. I start to tremble sometimes, and my hands start to shake.'
 ],
 [
   'test_drug reaction_176',
@@ -1635,17 +1635,17 @@
 [
   'test_drug reaction_178',
   'drug reaction',
-  "I'm losing hair, and my hair's texture has considerably altered. My dandruff is becoming worse, and my dry, itchy scalp. My skin is getting quite dry as well."
+  'I'm losing hair, and my hair's texture has considerably altered. My dandruff is becoming worse, and my dry, itchy scalp. My skin is getting quite dry as well.'
 ],
 [
   'test_drug reaction_179',
   'drug reaction',
-  "My desire for sex has dropped, and I'm having trouble having sex. I frequently get brain fog, as well as feeling somewhat bewildered."
+  'My desire for sex has dropped, and I'm having trouble having sex. I frequently get brain fog, as well as feeling somewhat bewildered.'
 ],
 [
   'test_drug reaction_180',
   'drug reaction',
-  "I've noticed a difference in my monthly cycle and an unexpected vaginal discharge. I become irritable every now and again, and my moods swing a lot."
+  'I've noticed a difference in my monthly cycle and an unexpected vaginal discharge. I become irritable every now and again, and my moods swing a lot.'
 ],
 [
   'test_drug reaction_181',
@@ -1665,22 +1665,22 @@
 [
   'test_drug reaction_184',
   'drug reaction',
-  "I suffer migraines and headaches, and I've been having trouble falling asleep. My whole body has been trembling and shivering. At times, I have dizziness."
+  'I suffer migraines and headaches, and I've been having trouble falling asleep. My whole body has been trembling and shivering. At times, I have dizziness.'
 ],
 [
   'test_drug reaction_185',
   'drug reaction',
-  "I am quite queasy and dizzy when I have a temperature. My brain is completely cloudy, and my heart is racing. I'm having trouble thinking straight, and everything seems a little fuzzy."
+  'I am quite queasy and dizzy when I have a temperature. My brain is completely cloudy, and my heart is racing. I'm having trouble thinking straight, and everything seems a little fuzzy.'
 ],
 [
   'test_drug reaction_186',
   'drug reaction',
-  "Sometimes my skin starts to flake off from my rashes. I'm more prone to becoming sick as a result. On occasion, my hands begin to quiver and I begin to tremble."
+  'Sometimes my skin starts to flake off from my rashes. I'm more prone to becoming sick as a result. On occasion, my hands begin to quiver and I begin to tremble.'
 ],
 [
   'test_drug reaction_187',
   'drug reaction',
-  "There is severe nausea and chest discomfort. My chest has been aching lately. I'm really nervous and shiver a lot of the time."
+  'There is severe nausea and chest discomfort. My chest has been aching lately. I'm really nervous and shiver a lot of the time.'
 ],
 [
   'test_drug reaction_188',
@@ -1690,22 +1690,22 @@
 [
   'test_drug reaction_189',
   'drug reaction',
-  "I'm shedding hair, and the texture of my hair has changed significantly. My dry, itchy scalp and dandruff are becoming worse. My skin is also becoming pretty dry."
+  'I'm shedding hair, and the texture of my hair has changed significantly. My dry, itchy scalp and dandruff are becoming worse. My skin is also becoming pretty dry.'
 ],
 [
   'test_drug reaction_190',
   'drug reaction',
-  "I no longer want to have sex, and it's difficult for me to do so. I regularly have brain fog and a sense of confusion."
+  'I no longer want to have sex, and it's difficult for me to do so. I regularly have brain fog and a sense of confusion.'
 ],
 [
   'test_drug reaction_191',
   'drug reaction',
-  "My monthly cycle has changed, and I've had an unexpected vaginal discharge. I occasionally lose my temper, and my moods change a lot."
+  'My monthly cycle has changed, and I've had an unexpected vaginal discharge. I occasionally lose my temper, and my moods change a lot.'
 ],
 [
   'test_drug reaction_192',
   'drug reaction',
-  "I've gained a lot of weight and am currently quite fat. I have many inclinations and cravings."
+  'I've gained a lot of weight and am currently quite fat. I have many inclinations and cravings.'
 ],
 [
   'test_drug reaction_193',
@@ -1720,17 +1720,17 @@
 [
   'test_drug reaction_195',
   'drug reaction',
-  "I have headaches and migraines, and I have been having difficulties sleeping. I've been shaking and shivering all over. Sometimes I become lightheaded."
+  'I have headaches and migraines, and I have been having difficulties sleeping. I've been shaking and shivering all over. Sometimes I become lightheaded.'
 ],
 [
   'test_drug reaction_196',
   'drug reaction',
-  "When I have a temperature, I feel pretty nauseous and lightheaded. My heart is pounding, and my mind is absolutely foggy. Everything feels a little hazy to me, and I'm having difficulties thinking clearly."
+  'When I have a temperature, I feel pretty nauseous and lightheaded. My heart is pounding, and my mind is absolutely foggy. Everything feels a little hazy to me, and I'm having difficulties thinking clearly.'
 ],
 [
   'test_drug reaction_197',
   'drug reaction',
-  "My rashes occasionally cause my skin to start to fall off. I'm more likely to get ill as a result. My hands occasionally start to tremble, and I start to shake."
+  'My rashes occasionally cause my skin to start to fall off. I'm more likely to get ill as a result. My hands occasionally start to tremble, and I start to shake.'
 ],
 [
   'test_drug reaction_198',
@@ -1800,7 +1800,7 @@
 [
   'test_peptic ulcer disease_211',
   'peptic ulcer disease',
-  "Bloating and unease are both present in me. I've been losing weight and losing interest in food. I occasionally get tarry, black stools and vomit that contains blood."     
+  'Bloating and unease are both present in me. I've been losing weight and losing interest in food. I occasionally get tarry, black stools and vomit that contains blood.'     
 ]
 ];
 module.exports = { dataset3 }
