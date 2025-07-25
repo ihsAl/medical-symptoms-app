@@ -33,14 +33,15 @@ async function askQuestion(prompt) {
         const gender = await askQuestion("What is the patients gender? ");
         
         // store user input as string (answer to "what are yout symptoms?")
-        let userInput = await askQuestion("Welche Symptome hast du? ");
+        let userInput = await askQuestion("What are your symptoms? ");
 
         // extract symptoms from the user input and storage in array "symptoms"
         let symptoms = await extractSymptoms(userInput);
 
         // debug
-        console.log("🧪 extractSymptoms(userInput):", symptoms);
+        console.log("extractSymptoms(userInput):", symptoms);
         
+        // transform symptoms into array (if not already) to process it easily
         if (!Array.isArray(symptoms)){
             symptoms = symptoms ? [symptoms] : [];
         }
@@ -61,7 +62,7 @@ async function askQuestion(prompt) {
                 // no answer --> system stops
                 keepAsking = false;
             } else {
-                answers.push(`${question} Antwort: ${answer}`);
+                answers.push(`${question} Answer: ${answer}`);
 
           // store symptom if user answers with yes
           if (answer.toLowerCase().startsWith('ja') || answer.toLowerCase().startsWith('yes')) {
@@ -72,7 +73,7 @@ async function askQuestion(prompt) {
                 : [symptomsFromQuestion];
 
             // get all symptoms in an array and delete duplicates
-            symptoms = [...new Set([...symptoms, ...newSympArr.map(s => s.toLowerCase().trim())])];
+            symptoms = [...new Set([...symptoms, ...newSympArr])];
     }
 }
 
