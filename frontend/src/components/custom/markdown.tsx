@@ -51,6 +51,14 @@ const NonMemoizedMarkdown = ({ children }: { children: string }) => {
         </span>
       );
     },
+    em: ({ node, children, ...props }: any) => {
+      return (
+        <em className="italic" {...props}>
+          {children}
+        </em>
+      );
+    },
+
     a: ({ node, children, ...props }: any) => {
       return (
         <a
