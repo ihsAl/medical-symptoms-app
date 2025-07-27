@@ -29,8 +29,8 @@ async function askQuestion(prompt) {
     try {
 
         // get age and gender of the patient
-        const age = await askQuestion("How old is the patient? ");
-        const gender = await askQuestion("What is the patients gender? ");
+        //const age = await askQuestion("How old is the patient? ");
+        //const gender = await askQuestion("What is the patients gender? ");
         
         // store user input as string (answer to "what are yout symptoms?")
         let userInput = await askQuestion("What are your symptoms? ");
@@ -113,8 +113,7 @@ if (cached && cached.cached === true && cached.diagnosis && cached.diagnosis.tri
         await savePatientCase({
 
             patientId: "patient_" + crypto.randomUUID(),
-            age,
-            gender,
+            
             allSymptoms: symptoms,
             followUpQA: answers.map(ans => {
                 const [question, ...answerParts] = ans.split(' Antwort: ');
