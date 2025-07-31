@@ -7,7 +7,7 @@ const crypto = require('crypto');
 
 function createNewSession() {
   return {
-    step: 0,
+    step: 1,
     //age: null,
     //gender: null,
     symptomsText: '',
@@ -32,19 +32,17 @@ wss.on('connection', (ws) => {
     try {
       switch (session.step) {
   
-  // Case 2 – Symptome abfragen
-  case 0:
-    
-    ws.send("What are your symptoms");
-    session.step = 1;
-    break;
-
-  // Case 1 – Symptome analysieren und erste Frage stellen
+  // Case 1: Symptome analysieren und erste Frage stellen
   case 1:
+    if (!text || text.trim() === "") {
+      ws.send("Please describe your symptoms");
+      return;
+  }
+
     session.symptomsText = text;
     const extracted = await extractSymptoms(text);
     session.symptoms = Array.isArray(extracted) ? extracted : (extracted ? [extracted] : []);
-    session.step = 2;
+    //session.step = 2;
 
     const firstQuestion = await getFollowUpQuestions(
       session.symptoms,
@@ -55,16 +53,21 @@ wss.on('connection', (ws) => {
       session.currentQuestion = firstQuestion.trim();
       session.questionCount++;
       ws.send(session.currentQuestion);
-      session.step = 3; // → Warte auf Antwort
+      session.step = 3; // Warte auf Antwort
     } else {
-      session.step = 4; // → Sofort zur Diagnose
+      session.step = 4; // Sofort zur Diagnose
       ws.emit('message', '');
     }
     break;
 
-  // Case 5 – Folgefragen/Antworten
+  // Case 5: Folgefragen/Antworten
   case 3: {
     const answer = text;
+    
+    if (!answer || answer.trim() === "") {
+      ws.send(`Please answer the current question:\n${session.currentQuestion}`);
+      return; 
+  }
 
     session.answers.push({
       question: session.currentQuestion,
@@ -102,7 +105,7 @@ wss.on('connection', (ws) => {
     break;
   }
 
-  // Case 4 – Diagnose ermitteln und speichern
+  // Case 4: Diagnose ermitteln und speichern
   case 4:
     ws.send("\nGet Diagnosis...\n");
 
@@ -110,7 +113,7 @@ wss.on('connection', (ws) => {
 
     let diagnosisFull;
     if (cached?.cached && cached.diagnosis?.trim()) {
-      ws.send("Diagnose aus dem Cache");
+
       diagnosisFull = `Diagnosis: ${cached.diagnosis}\nRecommendation: ${cached.recommendation}`;
     } else {
       diagnosisFull = await getDiagnosis(
@@ -137,7 +140,8 @@ wss.on('connection', (ws) => {
     ws.send(JSON.stringify({
       type: 'diagnosis',
       diagnosis,
-      recommendation
+      recommendation,
+      fromCache: !!cached?.cached
     }));
 
     ws.send("[END]");

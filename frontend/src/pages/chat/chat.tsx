@@ -1,7 +1,7 @@
 import { ChatInput } from "@/components/custom/chatinput";
 import { PreviewMessage, ThinkingMessage } from "../../components/custom/message";
 import { useScrollToBottom } from '@/components/custom/use-scroll-to-bottom';
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { message } from "../../interfaces/interfaces"
 import { Header } from "@/components/custom/header";
 import { Overview } from "@/components/custom/overview";
@@ -49,7 +49,24 @@ async function handleSubmit(text?: string) {
       if(event.data.includes("[END]")) {
         return;
       }
-      
+
+      try {
+    const parsed = JSON.parse(event.data);
+
+    if (parsed.type === "diagnosis") {
+      const diagnosisMessage: message = {
+        id: traceId,
+        role: "assistant",
+        content: `**Diagnosis:** ${parsed.diagnosis}\n\n**Recommendation:** ${parsed.recommendation}\n\n_${parsed.fromCache ? "Diagnosis from cache" : "New diagnosis generated"}_`
+      };
+ 
+      setMessages(prev => [...prev, diagnosisMessage]);
+      return;
+    }
+  } catch (e) {
+    // Kein JSON, sondern normaler Text
+  }
+       
       setMessages(prev => {
         const lastMessage = prev[prev.length - 1];
         const newContent = lastMessage?.role === "assistant" 

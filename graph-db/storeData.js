@@ -23,7 +23,7 @@ async function savePatientCase({patientId, allSymptoms, followUpQA, diagnosis, r
                 MERGE (p)-[:HAS_QA]->(q)
 
                 WITH DISTINCT p
-                CREATE (d:Diagnosis {text: $diagnosis, recommendation: $recommendation, timestamp: timestamp()})
+                CREATE (d:Diagnosis {diagnosis: $diagnosis, recommendation: $recommendation, timestamp: timestamp()})
                 MERGE (p)-[:HAS_DIAGNOSIS]->(d)
 
                 RETURN p, d
