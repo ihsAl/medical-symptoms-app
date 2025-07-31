@@ -1,12 +1,12 @@
 
 # llm - Folder
 
-this folder includes all modules that include communication with a local llm (Ollama) (+splitDiagnosisRecommendation which doesn't directly communicate with a llm but processes an output of the llm further)
+This folder includes all modules that include communication with a local llm (Ollama) (+splitDiagnosisRecommendation which doesn't directly communicate with a llm but processes an output of the llm further).
 
 # llmService
 This node.js-module serves to establish communication with ollama (lokal llm). Here the model mistral-instruct is used, which usually performs better in dialogue and instruction-following compared to the normal mistral model. It is necessary to pull this model in order to use it. This model uses axios to make HTTP requests to the local Ollama-API
 
-needed Installations:
+Needed Installations:
 
 install node.js: https://nodejs.org/en
 
@@ -17,7 +17,7 @@ install ollama via website: https://ollama.com/download
 ollama pull mistral:instruct  --> pull model
 
 ollama run mistral:instruct  --> run model
-
+(to check whether everything has been installed properly. this does not need to activated separately during runtime of the program)
 
 # llmQuestionsDiagnosis - Question and Diagnosis Generator
 This module describes two functions which interact with a local LLM (Ollama).
