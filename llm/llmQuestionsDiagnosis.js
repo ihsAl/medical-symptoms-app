@@ -49,7 +49,7 @@ and a recommendation for what the patient should do, using the following format:
 Assessment/Diagnosis: [a single medical term]  
 Recommendation: [max. two short sentences]
 
-if you are unsure, indicate uncertainty only in the recommendation, not in the diagnosis term.
+
 Only answer in English. Do not include any additional explanation or greeting.
 **In the diagnosis do not use "()" only one word**
 `;
