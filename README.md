@@ -16,14 +16,15 @@ There is a separate module for testing which includes a dataset with 1011 data p
 Install Ollama 
 https://ollama.com/download 
 
-Pull the required model.<br>
+Pull the required model:<br>
 This project uses the mistral:instruct model: 
 ollama pull mistral:instruct
 
-Start the Ollama server<br>
+Start the Ollama server:<br>
 If it doesn't start automatically, run: ollama serve
 
-Check availability: Model should be avalaible at default endpoint: http://localhost:11434 
+Check availability:<br>
+Model should be avalaible at default endpoint: http://localhost:11434 
 
 2. Backend installations:
 
@@ -33,7 +34,7 @@ https://nodejs.org/en/download
 npm install ws 
 --> Websocket für Frontend 
 
-npm install axios
+npm install axios<br>
 npm install neo4j-driver 
 --> bib to use cypher, get connection, etc. 
 
