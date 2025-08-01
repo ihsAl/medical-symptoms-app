@@ -1,10 +1,65 @@
+# Backend Documentation - Medical Symptoms App
 
-# llm - Folder
+This backend handles the logic for a medical symptoms app that uses a local LLM (Ollama - https://ollama.com) to generate follow-up questions and give out a diagnosis & a recommendation according to the reported symptoms of the user. 
+
+The system also uses Neo4j to store patient cases including: 
+- reported symptoms
+- follow-up questions and answers
+- final diagnosis and recommendation 
+
+Additionally, Neo4j is also used as cache for the diagnosis/recommendation generation when the same symptoms are reported instead of querying the LLM again for better performance and efficiency. 
+
+## Installation & Setup 
+
+### 1. Install Node.js 
+Download and install Node.js (https://nodejs.org/en/download)
+
+### 2. Install and Setup Ollama (local LLM)
+- Download & install Ollama (https://ollama.com/download)
+- Pull required model for this app (mistral-instruct): 
+ollama pull mistral:instruct
+- Check availability:
+Model should be avalaible at default endpoint: http://localhost:11434 --> if not run: ollama serve
+
+### 3. Start Neo4j Database (using Docker):
+Neo4j sever must be running locally on port 7687 --> use docker:
+On linux / macOs:  
+
+docker run \
+  -d \
+  --name neo4j-local \
+  -p 7474:7474 \
+  -p 7687:7687 \
+  -e NEO4J_AUTH=neo4j/llmproject2025 \
+  neo4j:latest
+
+On windows: 
+
+docker run ^
+  --name neo4j-local ^
+  -p 7474:7474 ^
+  -p 7687:7687 ^
+  -e NEO4J_AUTH=neo4j/llmproject2025 ^
+  neo4j:latest
+
+Access Neo4j browser interface:
+Open: http://localhost:7474/browser/
+Username: neo4j 
+Password: llmproject2025
+
+### 4. Install Node.js dependencies: 
+Navvigate to the backend folder in your terminal: 
+cd backend
+npm install
+
+This installs all required Node.js libraries including axios and neo4j-driver
+
+## /llm - Local LLM Integration 
 
 This folder includes all modules that include communication with a local llm (Ollama) (+splitDiagnosisRecommendation which doesn't directly communicate with a llm but processes an output of the llm further).
 
-# llmService
-This node.js-module serves to establish communication with ollama (lokal llm). Here the model mistral-instruct is used, which usually performs better in dialogue and instruction-following compared to the normal mistral model. It is necessary to pull this model in order to use it. This model uses axios to make HTTP requests to the local Ollama-API
+### llmService.js
+This node.js-module serves to establish communication with ollama (local llm). Here the model mistral-instruct is used, which usually performs better in dialogue and instruction-following compared to the normal mistral model. It is necessary to pull this model in order to use it. This model uses axios to make HTTP requests to the local Ollama-API.
 
 Needed Installations:
 
@@ -19,52 +74,53 @@ ollama pull mistral:instruct  --> pull model
 ollama run mistral:instruct  --> run model
 (to check whether everything has been installed properly. this does not need to activated separately during runtime of the program)
 
-# llmQuestionsDiagnosis - Question and Diagnosis Generator
-This module describes two functions which interact with a local LLM (Ollama).
+### llmQuestionsDiagnosis.js - Question and Diagnosis Generator
+This module desfines two functions which interact with a local LLM (Ollama).
 1. getFollowUpQuestions(symptoms, previousAnswer): This function generates a medical follow up question using Ollama according to the reported symptoms and previous answers. 
 2. getDiagnosis(symptoms, answers): This function returns a possible medical diagnosis and a recommendation according to the symptoms and given answers
 
 To get the questions, diagnosis and recommendation these functions use a prompt directed to the local Ollama API using 'axios'. 
 
-# llmTest - testFile to test the two functions in llmQuestionsDiagnosis 
-Test question generation and diagnosis/recommendation generation
+### llmTest.js - testFile to test the two functions in llmQuestionsDiagnosis 
+Test question generation and diagnosis/recommendation generation:
+- Test follow-up question generation 
+- Test diagnosis/recommendation generation
 
 
-# extractSymptoms - Extraction of Symptoms from a text 
+### extractSymptoms - Extraction of Symptoms from a text 
 This node.js module also uses a prompt directed to ollama to extract medical symptoms from a text. The return is an array of distinct symptoms in JSON. 
 
-# testExtractSymptoms - test file to test extractSymptoms - module 
-test extraction of symptoms from a defined text
+### testExtractSymptoms - test file to test extractSymptoms - module 
+Test script to validate the extraction of symptoms from an input-string
 
-# splitDiagnosisRecommendation
-this module defines one function which uses Regex to locate and extract the diagnosis and recommendation from a text. The return values are the seperated values of diagnosis and recommendation 
+### splitDiagnosisRecommendation.js
+This module defines one function which uses Regex to locate and extract the diagnosis and recommendation from a text. The return values are the seperated values of diagnosis and recommendation.
 
 
-# graph-db folder
-this folder contains all modules who are related to storage in a neo4j database or who are related with querying a neo4j database
+## /graph-db - Neo4j Intergration
+This folder contains all modules who are related to storage in a neo4j database or who are related with querying a neo4j database
 
-# neo4jService - connect to neo4j
-This module establishes a connection to a local neo4j database using 'neo4j-driver' (=node.js-bib to get access to neo4j db directly from JS/Node.js-module). This module is used by all other models which want to run queries.
+### neo4jService - connect to neo4j
+This module establishes a connection to a local neo4j database using 'neo4j-driver'. This module is used by all other models which want to run queries.
 
 Required installations:
 
 npm install neo4j-driver --> bib to use cypher, get connection, etc. 
 
-neo4j sever must be running locally on port 7687 --> use docker:
+neo4j sever must be running locally on port 7687 --> use docker: see installation above according to your operating system
 
-docker run \
-  --name neo4j-llm \
-  -p7474:7474 -p7687:7687 \
-  -e NEO4J_AUTH=neo4j/llmproject2025 \
-  neo4j:5
+### storeData - store patient case in neo4j 
+This module includes the function savePatientCase() which stores a complete patient case including:
+- reported symptoms
+- follow-up Q&A
+- final diagnosis & recommendation 
+in a Neo4j-DB
+To do this this function uses cypher queries.
 
-# storeData - store patient case in neo4j 
-this module includes the function savePatientCase() which stores a complete patient case including the symptoms, the follow-up questions with the corresponding answers, the final diagnosis and recommendation in a neo4j database. To do this this function uses cypher queries which is why this modules needs the connection to neo4jService.js 
-
-# diagnosisCache 
-this module describes a function cacheDiagnosis which tries to reuse existing datasets (diagnosis) by trying to match exiting patient cases with the current reported symptoms. 
+### diagnosisCache 
+This module implements the function cacheDiagnosis() which tries to match current symptoms with previous cases. If a match is found, the diagnosis will be pulled from the database and therefore skips the diagnosis-generation via LLM
 This module is useful for performance reasons because it avoids repeated llms calls for known symptoms.
-To get a diagnosis from the cache all symptoms must match with a previously reported one. 
+To get a diagnosis from the cache all symptoms must match with a previously reported one 
 
 # llmInteractive - Interactive medical app in terminal 
 Runs entire system from symptom input to diagnosis within the terminal. 
