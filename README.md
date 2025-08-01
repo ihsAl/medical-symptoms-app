@@ -13,8 +13,7 @@ There is a separate module for testing which includes a dataset with 1011 data p
 # Required installations for the app:
 1. Local LLM (Ollama) Installation:
 
-Install Ollama 
-https://ollama.com/download 
+Install Ollama --> https://ollama.com/download 
 
 Pull the required model:<br>
 This project uses the mistral:instruct model: 
@@ -34,7 +33,8 @@ https://nodejs.org/en/download
 npm install ws 
 --> Websocket für Frontend 
 
-npm install axios<br>
+npm install axios
+
 npm install neo4j-driver 
 --> bib to use cypher, get connection, etc. 
 
