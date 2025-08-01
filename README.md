@@ -16,9 +16,12 @@ There is a separate module for testing which includes a dataset with 1011 data p
 Install Ollama 
 https://ollama.com/download 
 
-Pull the required model
+Pull the required model.<br>
 This project uses the mistral:instruct model: 
 ollama pull mistral:instruct
+
+Start the Ollama server<br>
+If it doesn't start automatically, run: ollama serve
 
 Check availability: Model should be avalaible at default endpoint: http://localhost:11434 
 
