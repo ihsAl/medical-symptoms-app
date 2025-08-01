@@ -1,4 +1,3 @@
-# medical-symptoms-app
 # How does the app work? 
 This program allows a user to converse with Ollama Mistra LLM in order to find out what medical diagnosis applies to the user. 
 
@@ -8,9 +7,11 @@ At the end a diagnosis and a recommendation is given. Both are saved in the neo4
 
 After the initial run, any following diagnosis generations also test if there exists a user in the database which has the same symptoms as the current user. If that is so, then the diagnosis is pulled from the database and given out to the user.
 
+There is a separate module for testing which includes a dataset with 1011 data points. It shows how the program performs when compared to that dataset.
 
-# How to run the app:
-1. Required backend installations:
+
+# Required installations for the app:
+1. Backend installations:
 
 Install Node.js (version 19 at the very minimum is required)
 https://nodejs.org/en/download
@@ -46,13 +47,33 @@ To see the database open this URL:
 http://localhost:7474/browser/preview/
 password: llmproject2025
 
-ollama run mistral:instruct
-
 2. Required frontend installations:
 cd frontend
---> go to frontend folder
+--> go to 'frontend' folder
 npm install
 (details for the installed components are in the frontend docs)
 
-# App Organization
-It includes frontend (frontend folder), 
+# How to run the app?
+1. Activate the backend by going to the 'backend' folder and starting the server:
+cd backend
+node server
+
+2. Activate the frontend by going to 'frontend' folder and starting the interface:
+cd frontend
+npm run dev
+
+User this URL to access the app:
+http://localhost:8501/
+
+Notes:
+While the program is running, you can see in the backend terminal what symptoms are getting saved and at the end also how many nodes and relationships were saved in the database.
+
+
+# How to run testing?
+1. Go into the 'testing' folder and run the testing node:
+cd testing
+node datasetTest
+
+
+# In-Detail Documentations
+More in-detail documentations can be found in the 'docs' folder. 
