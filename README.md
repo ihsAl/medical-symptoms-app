@@ -76,4 +76,4 @@ node datasetTest
 
 
 # In-Detail Documentations
-More in-detail documentations can be found in the 'docs' folder. 
+More in-detail documentations for specific parts of the program can be found in the 'docs' folder. 
