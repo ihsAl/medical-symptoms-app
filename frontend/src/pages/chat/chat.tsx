@@ -46,26 +46,33 @@ async function handleSubmit(text?: string) {
   try {
     const messageHandler = (event: MessageEvent) => {
       setIsLoading(false);
+      console.log("WebSocket event received:", event.data);
+
       if(event.data.includes("[END]")) {
         return;
       }
 
-      try {
-    const parsed = JSON.parse(event.data);
+     try {
+  let parsed = JSON.parse(event.data);
 
-    if (parsed.type === "diagnosis") {
-      const diagnosisMessage: message = {
-        id: traceId,
-        role: "assistant",
-        content: `**Diagnosis:** ${parsed.diagnosis}\n\n**Recommendation:** ${parsed.recommendation}\n\n_${parsed.fromCache ? "Diagnosis from cache" : "New diagnosis generated"}_`
-      };
- 
-      setMessages(prev => [...prev, diagnosisMessage]);
-      return;
-    }
-  } catch (e) {
-    // Kein JSON, sondern normaler Text
+  // Falls es ein verschachtelter JSON-String ist
+  if (typeof parsed === "string") {
+    parsed = JSON.parse(parsed);
   }
+
+  if (parsed.type === "diagnosis") {
+    const diagnosisMessage: message = {
+      id: traceId,
+      role: "assistant",
+      content: `**Diagnosis:** ${parsed.diagnosis}\n\n**Recommendation:** ${parsed.recommendation}\n\n_${parsed.fromCache ? "Diagnosis from cache" : "New diagnosis generated"}_`
+    };
+
+    setMessages(prev => [...prev, diagnosisMessage]);
+    return;
+  }
+} catch (e) {
+  console.error("JSON parse error", e);
+}
        
       setMessages(prev => {
         const lastMessage = prev[prev.length - 1];
